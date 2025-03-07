@@ -4,8 +4,11 @@ import Navigation from "../Components/Navigations";
 const Employers = () => {
   return (
     <>
-      <Navigation />
-     
+      <Navigation /> 
+
+  
+    
+
     </>
   );
 };

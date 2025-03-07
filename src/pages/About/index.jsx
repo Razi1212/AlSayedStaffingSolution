@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <Navigation />
-      <div className="bg-BgColor-homecolor min-h-screen w-full lg:flex lg:p-10 mt-20">
+      <div className="bg-BgColor-homecolor min-h-screen w-full lg:flex lg:p-10">
 
         <div className="flex-1 ">
           <img src="./about.png" alt="Sample" className="w-full object-cover" />
@@ -48,7 +48,7 @@ const About = () => {
         </div>
       </div>
 
-      <section className="bg-BgColor-darkcolor min-h-screen w-full lg:p-12 p-5">
+      <section className="bg-BgColor-homecolor min-h-screen w-full lg:p-12 p-5">
         <h3 className="text-3xl font-bold text-center mb-6">
           Why Choose Al Sayed Staffing Solutions?
         </h3>

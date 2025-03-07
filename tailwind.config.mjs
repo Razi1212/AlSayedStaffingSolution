@@ -17,6 +17,7 @@ export default {
 				contactcolor:'rgb(250,250,250)',
 				formcolour:'rgb(231,231,231)',
 				darkcolor:'rgb(205,219,220)',
+				ChooseUscolor:'rgb(181,211,213)',
 				Contactbgclr:'rgb(242,245,252)',
 				btncolr:'rgb(23,72,110)',
 				Footerbg:'rgb(208,237,249)'
