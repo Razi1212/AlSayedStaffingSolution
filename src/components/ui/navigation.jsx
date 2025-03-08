@@ -18,13 +18,13 @@ import {
 const Services = [
   {
     title: "Job Seekers",
-    href: "/docs/primitives/alert-dialog",
+    href: "/Services/JobSeekers",
     description:
       "We at Al Sayeed provides services to JobSeekers",
   },
   {
     title: "Employeers",
-    href: "/docs/primitives/hover-card",
+    href: "/Services/Employers",
     description:
       "We at Al Sayeed provides services to Employeers",
   }
@@ -49,7 +49,7 @@ export default function Navigation() {
             <ul
               className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {Services.map((Services) => (
-                <ListItem key={Services.title} title={Services.title} href="/Services">
+                <ListItem key={Services.title} title={Services.title} href={Services.href}>
                   {Services.description}
                 </ListItem>
               ))}

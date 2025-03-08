@@ -1,69 +1,123 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import Dashboard from "../Dashboard";
+import axios from "axios";
 
 const AddJob = () => {
+  const [title, setTitle] = useState('')
+  const [industry, setIndustry] = useState('')
+  const [location, setLocation] = useState('')
+  const [description, setDescription] = useState('')
+  const [responsibilities, setResponsibilities] = useState('')
+  const [qualifications, setQualifications] = useState('')
+  const [benefits, setBenefits] = useState('')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      //const response = await axios.post('/api/routelocal', {title, industry, location, description, responsibilities, qualifications, benefits})
+      const response = await axios.post('/api/createJob', { title, industry, location, description, responsibilities, qualifications, benefits })
+
+      console.log(response)
+    } catch (error) {
+      if (error.response) {
+        // The server responded with a status code outside the range of 2xx
+        if (error.response.status === 404) {
+          console.error("Resource not found, please check the endpoint.");
+        } else {
+          console.error("Error:", error.response.status);
+        }
+      } else {
+        // Something went wrong in setting up the request
+        console.error("Request failed:", error.message);
+      }
+    }
+  }
+
   return (
     <>
       <Dashboard />
-      <form className="space-y-4">
-        <input
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          type="text"
-          name="JobTitle"
-          id="Job Title"
-          required=""
-          placeholder="Job Title"
-        />
-        <input
-          className="w-full p-3 border border-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          type="Industry"
-          name="Industry"
-          id="Industry"
-          required=""
-          placeholder="Industry"
-        ></input>
-        <input
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          type="Location"
-          name="Location"
-          id="Location"
-          required=""
-          placeholder="Location"
-        ></input>
-        <textarea
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          name="JobDescription"
-          id="JobDescription"
-          placeholder="Job Description"
-          style={{ height: "307px" }}
-        ></textarea>
+      <div className="bg-BgColor-homecolor min-h-screen w-full px-20 py-10">
+        <form onSubmit={handleSubmit} className="space-y-6 max-w-3xl mx-auto">
 
-        <textarea
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          name="Responsibilites"
-          id="Responsibilites"
-          placeholder="Responsibilites"
-          style={{ height: "307px" }}
-        ></textarea>
+          <input
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            name="JobTitle"
+            id="JobTitle"
+            required
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Job Title"
+          />
 
-        <textarea
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          name="Qualifications"
-          id="Qualifications"
-          placeholder="Qualifications"
-          style={{ height: "307px" }}
-        ></textarea>
 
-        <textarea
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          name="Benefits"
-          id="Benefits"
-          placeholder="Benefits"
-          style={{ height: "307px" }}
-        ></textarea>
+          <input
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            name="Industry"
+            id="Industry"
+            required
+            onChange={(e) => setIndustry(e.target.value)}
+            placeholder="Industry"
+          />
 
-        <button>Submit</button>
-      </form>
+          <input
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            name="Location"
+            id="Location"
+            required
+            onChange={(e) => setLocation(e.target.value)}
+            placeholder="Location"
+          />
+
+          <textarea
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="JobDescription"
+            id="JobDescription"
+            placeholder="Job Description"
+            onChange={(e) => setDescription(e.target.value)}
+            rows={6}
+          ></textarea>
+
+          <textarea
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="Responsibilities"
+            id="Responsibilities"
+            placeholder="Responsibilities"
+            onChange={(e) => setResponsibilities(e.target.value)}
+            rows={6}
+          ></textarea>
+
+          <textarea
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="Qualifications"
+            id="Qualifications"
+            placeholder="Qualifications"
+            onChange={(e) => setQualifications(e.target.value)}
+            rows={6}
+          ></textarea>
+
+          <textarea
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="Benefits"
+            id="Benefits"
+            placeholder="Benefits"
+            onChange={(e) => setBenefits(e.target.value)}
+            rows={6}
+          ></textarea>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+
     </>
   );
 };

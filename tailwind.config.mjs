@@ -20,7 +20,9 @@ export default {
 				ChooseUscolor:'rgb(181,211,213)',
 				Contactbgclr:'rgb(242,245,252)',
 				btncolr:'rgb(23,72,110)',
-				Footerbg:'rgb(208,237,249)'
+				Footerbg:'rgb(208,237,249)',
+				Services:'rgb(255,255,255)',
+				career:'rgb(242, 240, 230)'
   			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

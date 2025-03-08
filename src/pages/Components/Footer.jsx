@@ -1,6 +1,11 @@
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaInstagram, FaSkype, FaTelegram } from "react-icons/fa";
-
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaSkype,
+  FaLinkedinIn ,
+} from "react-icons/fa";
 export default function Footer() {
   return (
     <div className=" bg-BgColor-darkcolor text-black py-10 px-6 md:px-20 min-h-screen w-full ">
@@ -17,13 +22,44 @@ export default function Footer() {
           <p><strong>Email:</strong> <a href="mailto:recruitment@sayedstaffing.com" className="text-blue-400">recruitment@sayedstaffing.com</a></p>
           <p><strong>Call:</strong> <a href="tel:+917093961892" className="text-blue-400">7093961892</a></p>
 
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className="hover:text-blue-500"><FaFacebookF /></a>
-            <a href="#" className="hover:text-blue-400"><FaTwitter /></a>
-            <a href="#" className="hover:text-pink-500"><FaInstagram /></a>
-            <a href="#" className="hover:text-blue-400"><FaSkype /></a>
-            <a href="#" className="hover:text-blue-500"><FaTelegram /></a>
-          </div>
+            <div className="flex space-x-4 mt-4">
+                     <a
+                       href="https://www.facebook.com/share/1FSs7oeRiL/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-blue-500"
+                     >
+                       <FaFacebookF size={24} />
+                     </a>
+         
+                     <a
+                       href="https://youtube.com/@alsayedstaffingsolutionpvtltd?si=T1dvI_SA0VLksWzL"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-red-500"
+                     >
+                       <FaYoutube size={24} />
+                     </a>
+         
+                     <a
+                       href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-pink-500"
+                     >
+                       <FaInstagram size={24} />
+                     </a>
+         
+                     <a
+                       href="https://www.linkedin.com/company/al-sayed-staffing-solutions/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-blue-400"
+                     >
+                      <FaLinkedinIn size={24} />
+         
+                     </a>
+            </div>
         </div>
 
         <div className="flex gap-10">

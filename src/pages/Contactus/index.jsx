@@ -38,7 +38,7 @@ const Contactus = () => {
   return (
     <>
       <Navigation />
-      <div className="bg-BgColor-homecolor min-h-screen w-full lg:flex gap-5 mt-20">
+      <div className="bg-BgColor-homecolor min-h-screen w-full lg:flex gap-5">
         <div className="min-h-screen w-full flex-1 bg-BgColor-contactcolor lg:ml-20 lg:mt-12 rounded-2xl p-11 shadow-2xl">
           <p className="mb-5">Get In Touch!</p>
           <h3 className="text-4xl font-semibold mb-6">
