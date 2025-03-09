@@ -28,13 +28,13 @@ const Services = [
     description:
       "We at Al Sayeed provides services to Employeers",
   }
-  ];
+];
 
 export default function Navigation() {
   return (
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
-  
+
         <NavigationMenuItem>
           <Link href="/About" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -56,7 +56,15 @@ export default function Navigation() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-   
+
+        <NavigationMenuItem>
+          <Link href="/Industries" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Industries
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
 
         <NavigationMenuItem>
           <Link href="/Employers" legacyBehavior passHref>
