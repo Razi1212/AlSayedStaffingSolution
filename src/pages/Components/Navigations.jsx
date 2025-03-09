@@ -63,7 +63,7 @@ export default function Navbar() {
                                     </a>
 
                                     <a
-                                        href="/Industry"
+                                        href="/Industries"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
                                         Industries
