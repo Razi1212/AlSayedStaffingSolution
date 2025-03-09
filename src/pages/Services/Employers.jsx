@@ -104,7 +104,7 @@ export default function SidebarTabs() {
           className="w-full object-cover rounded-lg"
         />
         <h4 className="text-xl font-medium mb-2 mt-4">
-        How We Support Your Job Search::
+          How We Support Your Job Search::
         </h4>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>
@@ -126,82 +126,82 @@ export default function SidebarTabs() {
     ),
 
     DocumentsAttestation: (
-        <div className="min-h-screen w-full">
-          <h4 className="text-xl font-medium mb-2">Documents Attestation</h4>
-          <p className="text-gray-700 mb-4">
+      <div className="min-h-screen w-full">
+        <h4 className="text-xl font-medium mb-2">Documents Attestation</h4>
+        <p className="text-gray-700 mb-4">
           Many employers and visa authorities require verified documents for job applications and immigration purposes. We assist in attesting your essential documents to meet regulatory and employer requirements.
-          </p>
-          <img
-            src="/JobSeekers.jpg"
-            alt="Sample"
-            className="w-full object-cover rounded-lg"
-          />
-           <h4 className="text-xl font-medium mb-2">Our Resume Services Include:</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>
-                  <strong>Educational Document Attestation:</strong> Verification and authentication of degrees, diplomas, and transcripts.
-                </li>
-                <li>
-                  <strong>Professional Document Attestation:</strong> Certification of work experience letters, licenses, and professional certifications.
+        </p>
+        <img
+          src="/JobSeekers.jpg"
+          alt="Sample"
+          className="w-full object-cover rounded-lg"
+        />
+        <h4 className="text-xl font-medium mb-2">Our Resume Services Include:</h4>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>
+            <strong>Educational Document Attestation:</strong> Verification and authentication of degrees, diplomas, and transcripts.
+          </li>
+          <li>
+            <strong>Professional Document Attestation:</strong> Certification of work experience letters, licenses, and professional certifications.
 
-                </li>
-                <li>
-                  <strong>Legalization & Embassy Verification:</strong>Assistance in notarization, legalization, and embassy verification of documents as per country-specific requirements.
-                </li>
-              </ul>
-        </div>
-      ),
+          </li>
+          <li>
+            <strong>Legalization & Embassy Verification:</strong>Assistance in notarization, legalization, and embassy verification of documents as per country-specific requirements.
+          </li>
+        </ul>
+      </div>
+    ),
 
     VisaProcessingAssistance: (
-        <div className="min-h-screen w-full">
-          <h4 className="text-xl font-medium mb-2">Visa Processing Assistance</h4>
-          <p className="text-gray-700 mb-4">
+      <div className="min-h-screen w-full">
+        <h4 className="text-xl font-medium mb-2">Visa Processing Assistance</h4>
+        <p className="text-gray-700 mb-4">
           Securing a work visa can be a complex and time-consuming process. Our team simplifies the process by providing step-by-step guidance and ensuring compliance with immigration regulations.
-          </p>
-          <img
-            src="/JobSeekers.jpg"
-            alt="Sample"
-            className="w-full object-cover rounded-lg"
-          />
-            <h4 className="text-xl font-medium mb-2">How We Support Your Job Search:</h4>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>
-              <strong>Eligibility Assessment:</strong>We help determine the best visa category based on your qualifications and job offer.
-            </li>
-            <li>
-              <strong>Document Preparation:</strong> Guidance on gathering and organizing required documents such as passports, employment contracts, and medical reports
-            </li>
-            <li>
-              <strong>Application Submission Support:</strong>  We assist in completing and submitting visa applications correctly to avoid delays or rejections.
-            </li>
-          </ul>
-        </div>
+        </p>
+        <img
+          src="/JobSeekers.jpg"
+          alt="Sample"
+          className="w-full object-cover rounded-lg"
+        />
+        <h4 className="text-xl font-medium mb-2">How We Support Your Job Search:</h4>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>
+            <strong>Eligibility Assessment:</strong>We help determine the best visa category based on your qualifications and job offer.
+          </li>
+          <li>
+            <strong>Document Preparation:</strong> Guidance on gathering and organizing required documents such as passports, employment contracts, and medical reports
+          </li>
+          <li>
+            <strong>Application Submission Support:</strong>  We assist in completing and submitting visa applications correctly to avoid delays or rejections.
+          </li>
+        </ul>
+      </div>
     ),
 
     PredepartureGuidance: (
-        <div className="min-h-screen w-full">
-          <h4 className="text-xl font-medium mb-2">Pre departure Guidance</h4>
-          <p className="text-gray-700 mb-4">
+      <div className="min-h-screen w-full">
+        <h4 className="text-xl font-medium mb-2">Pre departure Guidance</h4>
+        <p className="text-gray-700 mb-4">
           Securing a work visa can be a complex and time-consuming process. Our team simplifies the process by providing step-by-step guidance and ensuring compliance with immigration regulations.
-          </p>
-          <img
-            src="/JobSeekers.jpg"
-            alt="Sample"
-            className="w-full object-cover rounded-lg"
-          />
-            <h4 className="text-xl font-medium mb-2">How We Support Your Job Search:</h4>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>
-              <strong>Eligibility Assessment:</strong>We help determine the best visa category based on your qualifications and job offer.
-            </li>
-            <li>
-              <strong>Document Preparation:</strong> Guidance on gathering and organizing required documents such as passports, employment contracts, and medical reports
-            </li>
-            <li>
-              <strong>Application Submission Support:</strong>  We assist in completing and submitting visa applications correctly to avoid delays or rejections.
-            </li>
-          </ul>
-        </div>
+        </p>
+        <img
+          src="/JobSeekers.jpg"
+          alt="Sample"
+          className="w-full object-cover rounded-lg"
+        />
+        <h4 className="text-xl font-medium mb-2">How We Support Your Job Search:</h4>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>
+            <strong>Eligibility Assessment:</strong>We help determine the best visa category based on your qualifications and job offer.
+          </li>
+          <li>
+            <strong>Document Preparation:</strong> Guidance on gathering and organizing required documents such as passports, employment contracts, and medical reports
+          </li>
+          <li>
+            <strong>Application Submission Support:</strong>  We assist in completing and submitting visa applications correctly to avoid delays or rejections.
+          </li>
+        </ul>
+      </div>
     ),
   };
 
@@ -216,15 +216,15 @@ export default function SidebarTabs() {
           <div className="w-1/4 min-w-[250px] p-8 border-r shadow-md flex flex-col">
             <div className="space-y-10">
               {tabs.map((tab) => (
-          <Button
-          key={tab.id}
-          className={`w-full justify-start px-6 py-6 rounded-lg font-semibold transition-all duration-300 shadow-sm
+                <Button
+                  key={tab.id}
+                  className={`w-full justify-start px-6 py-6 rounded-lg font-semibold transition-all duration-300 shadow-sm
            `}
-          onClick={() => setActiveTab(tab.id)}
-        >
-          {tab.label}
-        </Button>
-        
+                  onClick={() => setActiveTab(tab.id)}
+                >
+                  {tab.label}
+                </Button>
+
               ))}
             </div>
           </div>
@@ -233,6 +233,47 @@ export default function SidebarTabs() {
         </div>
       </div>
 
+      <div className="min-h-screen w-full flex flex-col md:flex-row items-center justify-between p-8 gap-8 bg-gray-100">
+      {/* Left Section */}
+      <div className="flex-1 space-y-8">
+        <h2 className="text-2xl font-bold text-blue-600">Benefits for Employers</h2>
+
+        {/* Benefit 1 */}
+        <div className="p-6 bg-white shadow-md rounded-lg">
+          <h3 className="text-lg font-semibold text-gray-900">1. Access to a Wider Talent Pool</h3>
+          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-2">
+            <li>Gain access to a vast network of skilled professionals from diverse industries and backgrounds.</li>
+            <li>Leverage our extensive database to find the right candidates efficiently.</li>
+            <li>Tap into specialized talent, including engineers, healthcare professionals, IT specialists, and skilled laborers.</li>
+          </ul>
+        </div>
+
+        {/* Benefit 2 */}
+        <div className="p-6 bg-white shadow-md rounded-lg">
+          <h3 className="text-lg font-semibold text-gray-900">2. Reduced Recruitment Costs</h3>
+          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-2">
+            <li>Minimize expenses associated with job postings, screenings, and lengthy hiring processes.</li>
+            <li>Benefit from a streamlined recruitment approach that saves time and resources.</li>
+            <li>Avoid the overhead costs of maintaining an in-house recruitment team.</li>
+          </ul>
+        </div>
+
+        {/* Benefit 3 */}
+        <div className="p-6 bg-white shadow-md rounded-lg">
+          <h3 className="text-lg font-semibold text-gray-900">3. Improved Hiring Outcomes</h3>
+          <ul className="list-disc list-inside text-gray-700 mt-2 space-y-2">
+            <li>Increase the chances of hiring the most suitable candidates through our rigorous screening and vetting processes.</li>
+            <li>Ensure long-term employee retention by matching job roles with the right expertise.</li>
+            <li>Reduce the risks of bad hires, improving overall workplace efficiency and productivity.</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Right Section (Image) */}
+      <div className="flex-1">
+        <img src="/ServicesJobSeekers.webp" alt="Recruitment Services" className="w-full rounded-lg shadow-md object-cover" />
+      </div>
+    </div>
       <Footer />
     </>
   );
