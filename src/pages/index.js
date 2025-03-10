@@ -1,66 +1,39 @@
-// import Navigations from "./Components/Navigations";
-// import Image from "next/image";
-
-// export default function () {
-//   return (
-//     <>
-//       <div className="min-h-screen w-full bg-green-800">
-//         {/* <div className="absolute inset-0 bg-[url('/RectLight2.webp')] bg-cover bg-center"> */}
-//         <Navigations />
-//         <div className="pl-14 pt-24">
-//           <h6 className="text-4xl">
-//             Your Gateway to Top Talent in the Gulf Region
-//           </h6>
-//           <p className="text-xl">
-//             With a Strong Foundation of expertise and a team of dedicated
-//             professionals,we cater to the recuirement needs of bussiness in the
-//             Gulf Countries and the Middle East.Our mission is to connect the
-//             right job opportunities with the right individuals.
-//           </p>
-//         </div>
-//       </div>
-
-//       <section className="bg-BgColor min-h-screen w-full">
-
-//       </section>
-//     </>
-//   );
-// }
-
 import Navigations from "./Components/Navigations";
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
-import Link from 'next/link';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
+import Link from "next/link";
 import CountUp from "./Countup";
+import Footer from "./Components/Footer";
 
 const slides = [
   {
-    image: './Construction.jpeg',
-    title: 'About',
-    description: 'Al Sayed Staffing Solutions is a premier recruitment agency specializing in connecting Gulf region businesses with exceptional talent',
-    link: '/About',
+    image: "./Construction.jpeg",
+    title: "About",
+    description:
+      "Al Sayed Staffing Solutions is a premier recruitment agency specializing in connecting Gulf region businesses with exceptional talent",
+    link: "/About",
   },
   {
-    image: './Discussion.jpeg',
-    title: 'Home',
-    description: 'Specialized Recruiters For Different Skills, Domain & Industry Verticals.',
-    link: '/About',
+    image: "./Discussion.jpeg",
+    title: "Home",
+    description:
+      "Specialized Recruiters For Different Skills, Domain & Industry Verticals.",
+    link: "/About",
   },
   {
-    image: './Research.jpeg',
-    title: 'Services',
-    description: 'Minimizing The Response Time – Sourcing to Onboarding',
-    link: '/About',
+    image: "./Research.jpeg",
+    title: "Services",
+    description: "Minimizing The Response Time – Sourcing to Onboarding",
+    link: "/About",
   },
 ];
 
 export default function () {
   const redirectToServices = () => {
-    window.location.href = './Services'; // or provide the correct path
+    window.location.href = "./Services"; // or provide the correct path
   };
   return (
     <>
-
       <Navigations />
 
       <div className="relative w-full h-screen overflow-hidden">
@@ -81,7 +54,9 @@ export default function () {
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 px-4">
-                <h1 className="text-2xl md:text-4xl font-bold mb-4">{slide.title}</h1>
+                <h1 className="text-2xl md:text-4xl font-bold mb-4">
+                  {slide.title}
+                </h1>
                 <p className="text-base md:text-xl mb-4">{slide.description}</p>
                 <Link
                   href={slide.link}
@@ -94,7 +69,6 @@ export default function () {
           ))}
         </Carousel>
       </div>
-
 
       <section className="w-full h-screen bg-cyan-50 font-geist">
         <div className="lg:flex">
@@ -111,13 +85,17 @@ export default function () {
               Your Bridge to Top Talent in the Gulf Region
             </h3>
             <p className="mt-4 text-gray-600">
-              We specialize in providing employment opportunities across various sectors in the Gulf region, focusing on industries such as oil, construction, and healthcare.
+              We specialize in providing employment opportunities across various
+              sectors in the Gulf region, focusing on industries such as oil,
+              construction, and healthcare.
             </p>
 
             <p className="mt-4 text-gray-600">
-              Our services connect skilled professionals with leading companies in these high-demand fields, offering tailored recruitment solutions that meet the unique needs of both employers and job seekers.
+              Our services connect skilled professionals with leading companies
+              in these high-demand fields, offering tailored recruitment
+              solutions that meet the unique needs of both employers and job
+              seekers.
             </p>
-
 
             <button
               onClick={redirectToServices}
@@ -132,9 +110,19 @@ export default function () {
       <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] min-h-screen w-full px-8 py-6">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8">
           <div className="flex-1 space-y-4">
-            <h6 className="text-xl font-bold">Career Opportunities Await You in the Gulf – Start Your Journey Now!</h6>
+            <h6 className="text-xl font-bold">
+              Career Opportunities Await You in the Gulf – Start Your Journey
+              Now!
+            </h6>
             <p className="text-lg">
-              Looking for exciting career opportunities in the Gulf region? Explore a wide range of job openings in the thriving Oil & Gas and Healthcare industries, two of the most in-demand sectors in the region. With the Gulf's rapid development and investment in energy and healthcare infrastructure, top companies are actively seeking skilled professionals to fill roles in engineering, project management, healthcare administration, medical professionals, and more.
+              Looking for exciting career opportunities in the Gulf region?
+              Explore a wide range of job openings in the thriving Oil & Gas and
+              Healthcare industries, two of the most in-demand sectors in the
+              region. With the Gulf's rapid development and investment in energy
+              and healthcare infrastructure, top companies are actively seeking
+              skilled professionals to fill roles in engineering, project
+              management, healthcare administration, medical professionals, and
+              more.
             </p>
 
             <div className="space-y-2">
@@ -183,8 +171,6 @@ export default function () {
               className="w-full object-cover rounded-lg"
             />
           </div>
-
-
         </div>
         <div className="mt-6">
           <button
@@ -196,6 +182,48 @@ export default function () {
         </div>
       </section>
 
+      <section
+  className="bg-cover bg-center bg-no-repeat py-16 px-8 w-full min-h-screen flex items-center justify-center"
+  style={{ backgroundImage: "url('/Contact.webp')" }}
+>
+  <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
+    {/* Left Content */}
+    <div className="text-center md:text-left max-w-2xl">
+      <h6 className="text-3xl md:text-4xl font-bold text-gray-900">
+        Let’s Collaborate with Us!
+      </h6>
+      <p className="mt-4 text-gray-700 leading-relaxed">
+        Looking for a job or seeking top talent to join your team? Whether
+        you're a job seeker searching for the perfect opportunity or an
+        employer looking to hire skilled professionals, we've got you covered!
+        Browse career opportunities, or get in touch with us for personalized
+        assistance and more details. Let's build successful careers and teams
+        together!
+      </p>
+
+      <div className="mt-6 flex flex-col md:flex-row gap-4">
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
+          Find a Job
+        </button>
+        <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
+          Hire Talent
+        </button>
+        <button className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
+          Contact Us
+        </button>
+      </div>
+    </div>
+
+    {/* Right Image */}
+    <div className="max-w-md md:max-w-lg w-full">
+      <img
+        src="./Test.webp"
+        alt="Professional team working together"
+        className="w-full h-auto object-cover rounded-lg shadow-xl"
+      />
+    </div>
+  </div>
+     </section>
 
 
 
@@ -231,6 +259,7 @@ export default function () {
           </div>
         </div>
       </section> */}
+       <Footer />
     </>
   );
 }
