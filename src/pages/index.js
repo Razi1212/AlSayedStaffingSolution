@@ -62,7 +62,7 @@ export default function () {
 
       <Navigations />
 
-      <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       <Carousel
         showArrows={false}
         showStatus={false}
@@ -95,28 +95,39 @@ export default function () {
     </div>
 
 
-      <section className='w-screen h-screen bg-cyan-50 font-geist'>
-        <div className='lg:flex'>
-          <div className='flex-1'>
-            <img src="./about.png" alt="Description of the image" class="lg:w-full lg:h-auto 200px 200px" />
+    <section className="w-full h-screen bg-cyan-50 font-geist">
+  <div className="lg:flex">
+    <div className="flex-1">
+      <img 
+        src="./about.png" 
+        alt="Description of the image" 
+        className="lg:w-full lg:h-auto w-52 h-52 mx-auto"
+      />
+    </div>
 
-          </div>
+    <div className="flex-1 lg:m-20 my-10 mx-6">
+      <h3 className="text-2xl font-bold text-gray-800">
+        Your Bridge to Top Talent in the Gulf Region
+      </h3>
+      <p className="mt-4 text-gray-600">
+        We specialize in providing employment opportunities across various sectors in the Gulf region, focusing on industries such as oil, construction, and healthcare.
+      </p>
 
-          <div className='flex-1 lg:m-20 my-10 mx-6'>
-            <h3>
-              Your Brige to Top Talent in the Gulf Region
-            </h3>
-            <p>We specialize in providing employment opportunities across various sectors in the Gulf region, focusing on industries such as oil, construction, and healthcare.</p>
+      <p className="mt-4 text-gray-600">
+        Our services connect skilled professionals with leading companies in these high-demand fields, offering tailored recruitment solutions that meet the unique needs of both employers and job seekers.
+      </p>
 
-            <p>Our services connect skilled professionals with leading companies in these high-demand fields, offering tailored recruitment solutions that meet the unique needs of both employers and job seekers.</p>
 
-            <p>With a deep understanding of the regional market, we ensure that candidates are matched with positions that align with their expertise, while helping businesses find top talent to drive growth and success. Whether in the energy sector, infrastructure development, or healthcare services, we are committed to fostering long-term employment relationships that benefit both workers and employers.</p>
+      <button 
+        onClick={redirectToServices} 
+        className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+      >
+        Go to Services
+      </button>
+    </div>
+  </div>
+    </section>
 
-            <button onClick={redirectToServices}>Go to Services</button>
-
-          </div>
-        </div>
-      </section>
 
 
       {/* <section className='w-screen h-screen bg-violet-200 lg:p-10 px-6 font-geist'>
