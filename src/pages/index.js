@@ -21,7 +21,7 @@
 //       </div>
 
 //       <section className="bg-BgColor min-h-screen w-full">
-      
+
 //       </section>
 //     </>
 //   );
@@ -31,6 +31,7 @@ import Navigations from "./Components/Navigations";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
 import Link from 'next/link';
+import CountUp from "./Countup";
 
 const slides = [
   {
@@ -62,71 +63,139 @@ export default function () {
 
       <Navigations />
 
-    <div className="relative w-full h-screen overflow-hidden">
-      <Carousel
-        showArrows={false}
-        showStatus={false}
-        showIndicators={false}
-        infiniteLoop
-        autoPlay
-        emulateTouch
-        interval={3000}
-      >
-        {slides.map((slide, index) => (
-          <div key={index} className="relative w-full h-screen">
+      <div className="relative w-full h-screen overflow-hidden">
+        <Carousel
+          showArrows={false}
+          showStatus={false}
+          showIndicators={false}
+          infiniteLoop
+          autoPlay
+          emulateTouch
+          interval={3000}
+        >
+          {slides.map((slide, index) => (
+            <div key={index} className="relative w-full h-screen">
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 px-4">
+                <h1 className="text-2xl md:text-4xl font-bold mb-4">{slide.title}</h1>
+                <p className="text-base md:text-xl mb-4">{slide.description}</p>
+                <Link
+                  href={slide.link}
+                  className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          ))}
+        </Carousel>
+      </div>
+
+
+      <section className="w-full h-screen bg-cyan-50 font-geist">
+        <div className="lg:flex">
+          <div className="flex-1">
             <img
-              src={slide.image}
-              alt={slide.title}
-              className="absolute inset-0 w-full h-full object-cover"
+              src="./about.png"
+              alt="Description of the image"
+              className="lg:w-full lg:h-auto w-52 h-52 mx-auto"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 px-4">
-              <h1 className="text-2xl md:text-4xl font-bold mb-4">{slide.title}</h1>
-              <p className="text-base md:text-xl mb-4">{slide.description}</p>
-              <Link
-                href={slide.link}
-                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-              >
-                Learn More
-              </Link>
+          </div>
+
+          <div className="flex-1 lg:m-20 my-10 mx-6">
+            <h3 className="text-2xl font-bold text-gray-800">
+              Your Bridge to Top Talent in the Gulf Region
+            </h3>
+            <p className="mt-4 text-gray-600">
+              We specialize in providing employment opportunities across various sectors in the Gulf region, focusing on industries such as oil, construction, and healthcare.
+            </p>
+
+            <p className="mt-4 text-gray-600">
+              Our services connect skilled professionals with leading companies in these high-demand fields, offering tailored recruitment solutions that meet the unique needs of both employers and job seekers.
+            </p>
+
+
+            <button
+              onClick={redirectToServices}
+              className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            >
+              Go to Services
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] min-h-screen w-full px-8 py-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8">
+          <div className="flex-1 space-y-4">
+            <h6 className="text-xl font-bold">Career Opportunities Await You in the Gulf – Start Your Journey Now!</h6>
+            <p className="text-lg">
+              Looking for exciting career opportunities in the Gulf region? Explore a wide range of job openings in the thriving Oil & Gas and Healthcare industries, two of the most in-demand sectors in the region. With the Gulf's rapid development and investment in energy and healthcare infrastructure, top companies are actively seeking skilled professionals to fill roles in engineering, project management, healthcare administration, medical professionals, and more.
+            </p>
+
+            <div className="space-y-2">
+              <div className="flex items-center">
+                <CountUp
+                  from={0}
+                  to={50}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="text-3xl font-semibold"
+                />
+                <p className="ml-2">Strong Internal team</p>
+              </div>
+
+              <div className="flex items-center">
+                <CountUp
+                  from={0}
+                  to={30}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="text-3xl font-semibold"
+                />
+                <p className="ml-2">Recruiters</p>
+              </div>
+
+              <div className="flex items-center">
+                <CountUp
+                  from={0}
+                  to={10}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="text-3xl font-semibold"
+                />
+                <p className="ml-2">Admin Supporting Staff</p>
+              </div>
             </div>
           </div>
-        ))}
-      </Carousel>
-    </div>
+
+          <div className="flex-1">
+            <img
+              src="./Test.webp"
+              alt="Professional team working together in the Gulf region"
+              className="w-full object-cover rounded-lg"
+            />
+          </div>
 
 
-    <section className="w-full h-screen bg-cyan-50 font-geist">
-  <div className="lg:flex">
-    <div className="flex-1">
-      <img 
-        src="./about.png" 
-        alt="Description of the image" 
-        className="lg:w-full lg:h-auto w-52 h-52 mx-auto"
-      />
-    </div>
+        </div>
+        <div className="mt-6">
+          <button
+            onClick={redirectToServices}
+            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            Find Job
+          </button>
+        </div>
+      </section>
 
-    <div className="flex-1 lg:m-20 my-10 mx-6">
-      <h3 className="text-2xl font-bold text-gray-800">
-        Your Bridge to Top Talent in the Gulf Region
-      </h3>
-      <p className="mt-4 text-gray-600">
-        We specialize in providing employment opportunities across various sectors in the Gulf region, focusing on industries such as oil, construction, and healthcare.
-      </p>
-
-      <p className="mt-4 text-gray-600">
-        Our services connect skilled professionals with leading companies in these high-demand fields, offering tailored recruitment solutions that meet the unique needs of both employers and job seekers.
-      </p>
-
-
-      <button 
-        onClick={redirectToServices} 
-        className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-      >
-        Go to Services
-      </button>
-    </div>
-  </div>
-    </section>
 
 
 
