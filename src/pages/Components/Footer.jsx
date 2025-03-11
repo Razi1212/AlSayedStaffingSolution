@@ -4,7 +4,7 @@ import {
   FaYoutube,
   FaInstagram,
   FaSkype,
-  FaLinkedinIn ,
+  FaLinkedinIn,
 } from "react-icons/fa";
 export default function Footer() {
   return (
@@ -23,51 +23,51 @@ export default function Footer() {
           <p><strong>Email:</strong> <a href="mailto:recruitment@sayedstaffing.com" className="text-white">recruitment@sayedstaffing.com</a></p>
           <p><strong>Call:</strong> <a href="tel:+917093961892" className="text-white">7093961892</a></p>
 
-            <div className="flex space-x-4 mt-4">
-                     <a
-                       href="https://www.facebook.com/share/1FSs7oeRiL/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       className="hover:text-blue-500"
-                     >
-                       <FaFacebookF size={24} />
-                     </a>
-         
-                     <a
-                       href="https://youtube.com/@alsayedstaffingsolutionpvtltd?si=T1dvI_SA0VLksWzL"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       className="hover:text-red-500"
-                     >
-                       <FaYoutube size={24} />
-                     </a>
-         
-                     <a
-                       href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       className="hover:text-pink-500"
-                     >
-                       <FaInstagram size={24} />
-                     </a>
-         
-                     <a
-                       href="https://www.linkedin.com/company/al-sayed-staffing-solutions/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       className="hover:text-blue-400"
-                     >
-                      <FaLinkedinIn size={24} />
-         
-                     </a>
-            </div>
+          <div className="flex space-x-4 mt-4">
+            <a
+              href="https://www.facebook.com/share/1FSs7oeRiL/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500"
+            >
+              <FaFacebookF size={24} />
+            </a>
+
+            <a
+              href="https://youtube.com/@alsayedstaffingsolutionpvtltd?si=T1dvI_SA0VLksWzL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red-500"
+            >
+              <FaYoutube size={24} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-500"
+            >
+              <FaInstagram size={24} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/al-sayed-staffing-solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
+              <FaLinkedinIn size={24} />
+
+            </a>
+          </div>
         </div>
 
         <div className="flex gap-10">
 
 
           <div>
-            <h3 className="text-black font-semibold mb-3">Our Industries</h3>
+            <h3 className="text-white font-semibold mb-3">Our Industries</h3>
             <ul className="space-y-2">
               <li><Link href="/Services" className="hover:text-blue-400">Oil & Gas</Link></li>
               <li><Link href="/Services" className="hover:text-blue-400">Construction</Link></li>
@@ -79,7 +79,7 @@ export default function Footer() {
 
 
           <div>
-            <h3 className="text-black font-semibold mb-3">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/About" className="hover:text-blue-400">About Us</Link></li>
               <li><Link href="/Services" className="hover:text-blue-400">Services</Link></li>
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <hr className="my-6 border-gray-700" />
+    <hr className="my-6 border-gray-700" />
       <div className="flex flex-wrap justify-between text-sm text-white">
         <p>Copyright © 2025 Al Sayed Staffing Solution All Rights Reserved.</p>
         <p>Confidentiality & Privacy</p>

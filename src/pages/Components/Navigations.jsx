@@ -62,12 +62,7 @@ export default function Navbar() {
                                         Services
                                     </a>
 
-                                    <a
-                                        href="/Industries"
-                                        className="text-muted-foreground hover:text-foreground"
-                                    >
-                                        Industries
-                                    </a>
+                                
 
                                     <a
                                         href="/Employers"
@@ -83,12 +78,6 @@ export default function Navbar() {
                                         Jobseekers
                                     </a>
 
-                                    <a
-                                        href="/Career"
-                                        className="text-muted-foreground hover:text-foreground"
-                                    >
-                                        Career
-                                    </a>
 
                                     <a
                                         href="/Contactus"

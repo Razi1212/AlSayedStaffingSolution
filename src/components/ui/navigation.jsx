@@ -59,15 +59,7 @@ export default function Navigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-          <Link href="/Industries" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Industries
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-
-
+  
         <NavigationMenuItem>
           <Link href="/Employers" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -84,13 +76,7 @@ export default function Navigation() {
           </Link>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-          <Link href="/Career" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Career
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+      
 
         <NavigationMenuItem>
           <Link href="/Contactus" legacyBehavior passHref>
