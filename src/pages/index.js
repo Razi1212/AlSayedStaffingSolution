@@ -29,9 +29,7 @@ const slides = [
 ];
 
 export default function () {
-  const redirectToServices = () => {
-    window.location.href = "./Services"; // or provide the correct path
-  };
+
   return (
     <>
       <Navigations />
@@ -97,12 +95,11 @@ export default function () {
               seekers.
             </p>
 
-            <button
-              onClick={redirectToServices}
-              className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-            >
-              Go to Services
-            </button>
+            <Link href="/Services">
+              <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                Go to Services
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -173,57 +170,65 @@ export default function () {
           </div>
         </div>
         <div className="mt-6">
-          <button
-            onClick={redirectToServices}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          >
-            Find Job
-          </button>
+          <Link href="/Jobseekers">
+            <button
+              className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            >
+              Find Job
+            </button>
+          </Link>
         </div>
       </section>
 
       <section
-  className="bg-cover bg-center bg-no-repeat py-16 px-8 w-full min-h-screen flex items-center justify-center"
-  style={{ backgroundImage: "url('/Contact.webp')" }}
->
-  <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
-    {/* Left Content */}
-    <div className="text-center md:text-left max-w-2xl">
-      <h6 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Let’s Collaborate with Us!
-      </h6>
-      <p className="mt-4 text-gray-700 leading-relaxed">
-        Looking for a job or seeking top talent to join your team? Whether
-        you're a job seeker searching for the perfect opportunity or an
-        employer looking to hire skilled professionals, we've got you covered!
-        Browse career opportunities, or get in touch with us for personalized
-        assistance and more details. Let's build successful careers and teams
-        together!
-      </p>
+        className="bg-cover bg-center bg-no-repeat py-16 px-8 w-full min-h-screen flex items-center justify-center"
+        style={{ backgroundImage: "url('/Contact.webp')" }}
+      >
 
-      <div className="mt-6 flex flex-col md:flex-row gap-4">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
-          Find a Job
-        </button>
-        <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
-          Hire Talent
-        </button>
-        <button className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
-          Contact Us
-        </button>
-      </div>
-    </div>
+        <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
+          {/* Left Content */}
+          <div className="text-center md:text-left max-w-2xl">
+            <h6 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Let’s Collaborate with Us!
+            </h6>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              Looking for a job or seeking top talent to join your team? Whether
+              you're a job seeker searching for the perfect opportunity or an
+              employer looking to hire skilled professionals, we've got you covered!
+              Browse career opportunities, or get in touch with us for personalized
+              assistance and more details. Let's build successful careers and teams
+              together!
+            </p>
 
-    {/* Right Image */}
-    <div className="max-w-md md:max-w-lg w-full">
-      <img
-        src="./Test.webp"
-        alt="Professional team working together"
-        className="w-full h-auto object-cover rounded-lg shadow-xl"
-      />
-    </div>
-  </div>
-     </section>
+            <div className="mt-6 flex flex-col md:flex-row gap-4">
+              <Link href="/Jobseekers">
+                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
+                  Find a Job
+                </button>
+              </Link >
+              <Link href="/Employers">
+                <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
+                  Hire Talent
+                </button>
+              </Link >
+              <Link href="/Contactus">
+                <button className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
+                  Contact Us
+                </button>
+              </Link >
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="max-w-md md:max-w-lg w-full">
+            <img
+              src="./Test.webp"
+              alt="Professional team working together"
+              className="w-full h-auto object-cover rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </section>
 
 
 
@@ -259,7 +264,7 @@ export default function () {
           </div>
         </div>
       </section> */}
-       <Footer />
+      <Footer />
     </>
   );
 }
