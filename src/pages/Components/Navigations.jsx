@@ -11,7 +11,7 @@ import LaunchUI from "@/components/logos/launch-ui";
 
 export default function Navbar() {
     return (
-        <header className="sticky top-0 z-50  px-4   bg-BgColor-darkcolor">
+        <header className="sticky top-0 z-50  px-4   bg-BgColor-NavNewColor text-white">
             <div className="fade-bottom absolute left-0 h-18 w-full bg-background/15 backdrop-blur-lg"></div>
             <div className="relative mx-auto max-w-container">
                 <NavbarComponent>
