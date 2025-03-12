@@ -80,20 +80,13 @@ export default function () {
 
           <div className="flex-1 lg:m-20 my-10 mx-6">
             <h3 className="text-2xl font-bold text-gray-800">
-              Your Bridge to Top Talent in the Gulf Region
+              Connecting Regional Talent with Gulf Opportunities.
             </h3>
             <p className="mt-4 text-gray-600">
-              We specialize in providing employment opportunities across various
-              sectors in the Gulf region, focusing on industries such as oil,
-              construction, and healthcare.
+              We specialize in placing skilled professionals across key Gulf industries, including oil and gas, construction, manufacturing, finance, retail, hospitality, IT, and healthcare. Our tailored recruitment solutions bridge the gap between top talent and leading companies.
             </p>
 
-            <p className="mt-4 text-gray-600">
-              Our services connect skilled professionals with leading companies
-              in these high-demand fields, offering tailored recruitment
-              solutions that meet the unique needs of both employers and job
-              seekers.
-            </p>
+
 
             <Link href="/Services">
               <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">

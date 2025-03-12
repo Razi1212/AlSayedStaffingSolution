@@ -15,11 +15,13 @@ const About = () => {
 
         <div className="flex-1">
 
+          <h6 className="ml-6 text-xl">Unlock Your Potential with Al Sayed Staffing Solutions</h6>
           <p className="m-5 inline-flex items-start">
+
 
             <FaArrowRight className="ml-2 text-black" size={50} />
             <span className="ml-2">
-              Founded in 2023, Al Sayed Staffing Solutions is a rapidly growing staffing agency in the market. Our team consists of highly experienced professionals with extensive expertise in handling client requirements across industries in the GCC region.
+              In today's competitive market, finding the right talent or the perfect career opportunity is crucial. Al Sayed Staffing Solutions, established in 2023, is your trusted partner in navigating this landscape. We bring together a team of highly experienced professionals dedicated to delivering exceptional staffing solutions across the GCC.
             </span>
           </p>
 
@@ -27,7 +29,10 @@ const About = () => {
           <p className="m-5 inline-flex items-start">
             <FaArrowRight className="ml-2 text-black" size={50} />
             <span className="ml-2">
-              We take pride in providing potential job opportunities with promising career prospects to hundreds of aspiring candidates. These placements are in highly rewarding positions for industrial clients across Gulf Countries and the Middle East, backed by robust processes for profile screening.
+              Precision Matching: Our in-depth understanding of diverse industries allows us to meticulously align candidate skills and experience with your specific job requirements.
+              Efficiency Through Automation: Our fully automated system and streamlined procedures ensure a seamless and efficient hiring process, saving you time and resources.
+              Quality Assurance: We are committed to delivering only top-tier candidates, ensuring they can immediately contribute to your organization's success.
+              For Candidates: Build Your Dream Career.
             </span>
           </p>
 
@@ -35,16 +40,14 @@ const About = () => {
           <p className="m-5 inline-flex items-start">
             <FaArrowRight className="ml-2 text-black" size={50} />
             <span className="ml-2">
-              Ensuring the satisfaction of both employers and employees is essential to us. We strive to support candidates' career growth in multinational companies and other industrial sectors across the GCC by thoroughly aligning job specifications with candidates' skills and experience.
+              Access to Premier Opportunities: We connect you with leading multinational companies and diverse industrial sectors across the GCC.
+              Career Growth Support: We are dedicated to supporting your professional development, helping you achieve your career aspirations.
+              Personalized Matching: We take the time to understand your skills and experience, ensuring you are matched with roles that are the perfect fit.
+              Our Promise: We are driven by a commitment to excellence and the satisfaction of both our clients and candidates. We build lasting relationships based on trust, integrity, and mutual success.
             </span>
           </p>
 
-          <p className="m-5 inline-flex items-start">
-            <FaArrowRight className="ml-2 text-black" size={50} />
-            <span className="ml-2">
-              Our fully automated system and streamlined procedures guarantee that only top-quality candidates with the right expertise are onboarded. This enables them to effectively deliver their assigned roles in harmony with client requirements.
-            </span>
-          </p>
+
         </div>
       </div>
 
@@ -53,9 +56,8 @@ const About = () => {
           Why Choose Al Sayed Staffing Solutions?
         </h3>
         <span className="text-center text-gray-600 max-w-3xl mx-auto text-xl">
-          The most useful time to seek professional business advice and support is
-          before starting. A business startup consulting firm works directly with
-          the client to identify the most critical first and next steps.
+          Professional business advice and support are essential for addressing challenges and capitalizing on opportunities at any stage of a business's lifecycle. From foundational planning for startups to strategic realignment for established companies, expert consultants can help identify and implement impactful solutions.
+
         </span>
 
         <div className="p-6 lg:p-20 rounded-xl lg:flex lg:gap-10 space-y-6 lg:space-y-0">
