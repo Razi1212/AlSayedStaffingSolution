@@ -23,8 +23,10 @@ export default {
 				Footerbg:'rgb(208,237,249)',
 				Services:'rgb(255,255,255)',
 				career:'rgb(242, 240, 230)',
-				NavNewColor:'rgb(11,20,63)'
+				NavNewColor:'rgb(11,20,63)',
+				
   			},
+			
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

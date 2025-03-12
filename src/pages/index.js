@@ -29,7 +29,6 @@ const slides = [
 ];
 
 export default function () {
-
   return (
     <>
       <Navigations />
@@ -68,8 +67,10 @@ export default function () {
         </Carousel>
       </div>
 
-      <section className="w-full h-screen bg-cyan-50 font-geist">
-        <div className="lg:flex">
+      <section className=" bg-cyan-50 font-geist">
+
+        <div className="lg:flex lg:mx-[5%] lg:py-[5%] xl:mx-[8%] xl:py-[8%]">
+
           <div className="flex-1">
             <img
               src="./about.png"
@@ -78,15 +79,17 @@ export default function () {
             />
           </div>
 
-          <div className="flex-1 lg:m-20 my-10 mx-6">
-            <h3 className="text-2xl font-bold text-gray-800">
+          <div className="flex-1  py-10 px-6">
+            <h3 className="text-2xl font-bold text-gray-800 lg:text-4xl xl:text-3xl lg:text-green-600 xl:text-blue-500 xl:mb-[5%]">
               Connecting Regional Talent with Gulf Opportunities.
             </h3>
-            <p className="mt-4 text-gray-600">
-              We specialize in placing skilled professionals across key Gulf industries, including oil and gas, construction, manufacturing, finance, retail, hospitality, IT, and healthcare. Our tailored recruitment solutions bridge the gap between top talent and leading companies.
+            <p className="mt-4 text-gray-600 lg:text-xl">
+              We specialize in placing skilled professionals across key Gulf
+              industries, including oil and gas, construction, manufacturing,
+              finance, retail, hospitality, IT, and healthcare. Our tailored
+              recruitment solutions bridge the gap between top talent and
+              leading companies.
             </p>
-
-
 
             <Link href="/Services">
               <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
@@ -97,14 +100,14 @@ export default function () {
         </div>
       </section>
 
-      <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] min-h-screen w-full px-8 py-6">
-        <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-8">
+      <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  px-8 py-6 lg:px-[5%] lg:py-[5%] xl:px-[8%] xl:py-[8%]">
+        <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 ">
           <div className="flex-1 space-y-4">
-            <h6 className="text-xl font-bold">
+            <h6 className="lg:text-4xl xl:text-3xl md:text-4xl font-bold text-gray-900">
               Career Opportunities Await You in the Gulf – Start Your Journey
               Now!
             </h6>
-            <p className="text-lg">
+            <p className="text-lg lg:text-xl">
               Looking for exciting career opportunities in the Gulf region?
               Explore a wide range of job openings in the thriving Oil & Gas and
               Healthcare industries, two of the most in-demand sectors in the
@@ -164,9 +167,7 @@ export default function () {
         </div>
         <div className="mt-6">
           <Link href="/Jobseekers">
-            <button
-              className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-            >
+            <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
               Find Job
             </button>
           </Link>
@@ -174,41 +175,40 @@ export default function () {
       </section>
 
       <section
-        className="bg-cover bg-center bg-no-repeat py-16 px-8 w-full min-h-screen flex items-center justify-center"
+        className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center "
         style={{ backgroundImage: "url('/Contact.webp')" }}
       >
-
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
           {/* Left Content */}
           <div className="text-center md:text-left max-w-2xl">
-            <h6 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h6 className="lg:text-4xl xl:text-3xl md:text-4xl font-bold text-gray-900">
               Let’s Collaborate with Us!
             </h6>
-            <p className="mt-4 text-gray-700 leading-relaxed">
+            <p className="mt-4 text-gray-700 leading-relaxed lg:text-xl">
               Looking for a job or seeking top talent to join your team? Whether
               you're a job seeker searching for the perfect opportunity or an
-              employer looking to hire skilled professionals, we've got you covered!
-              Browse career opportunities, or get in touch with us for personalized
-              assistance and more details. Let's build successful careers and teams
-              together!
+              employer looking to hire skilled professionals, we've got you
+              covered! Browse career opportunities, or get in touch with us for
+              personalized assistance and more details. Let's build successful
+              careers and teams together!
             </p>
 
-            <div className="mt-6 flex flex-col md:flex-row gap-4">
+            <div className="mt-6 flex flex-col md:flex-row gap-4 lg:text-xl">
               <Link href="/Jobseekers">
                 <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
                   Find a Job
                 </button>
-              </Link >
+              </Link>
               <Link href="/Employers">
                 <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
                   Hire Talent
                 </button>
-              </Link >
+              </Link>
               <Link href="/Contactus">
                 <button className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
                   Contact Us
                 </button>
-              </Link >
+              </Link>
             </div>
           </div>
 
@@ -222,41 +222,6 @@ export default function () {
           </div>
         </div>
       </section>
-
-
-
-      {/* <section className='w-screen h-screen bg-violet-200 lg:p-10 px-6 font-geist'>
-        <h4 className="text-xl font-bold font-open-sans">Our Recruitment Process</h4>
-        <p>Our systematic recruitment process is designed to deliver results with efficiency and precision. We follow a structured approach that includes:</p>
-        <div className="lg:flex">
-          <div className="flex-1 bg-slate-200 p-6">
-            <p className="font-semibold">1. Requirement Gathering</p>
-            <p>Understanding your organization's unique needs and job requirements.</p>
-            <p>Collaborating closely with clients to create detailed job descriptions and expectations for the Telesales Executive role.</p>
-
-            <p className="font-semibold mt-4">2. Candidate Sourcing</p>
-            <p>We employ a multi-faceted approach to identify top talent:</p>
-            <ul>
-              <li>Internal Database: Leveraging our extensive pool of pre-screened candidates.</li>
-              <li>Industry References: Engaging with our trusted network to find high-quality referrals.</li>
-              <li>Field Recruiting: Identifying and approaching professionals actively working in relevant industries.</li>
-              <li>Vendor Collaboration: Partnering with recruitment vendors to expand our reach.</li>
-              <li>Social Media Platforms: Utilizing LinkedIn, Facebook, and other platforms for targeted sourcing.</li>
-              <li>Job Portals: Posting openings and sourcing profiles on leading platforms like Naukri, Monster, and Indeed.</li>
-            </ul>
-          </div>
-
-          <div className="flex-1 bg-orange-100 p-6">
-            <p className="font-semibold">3. Screening & Quality Control</p>
-            <p>We perform a detailed evaluation to ensure candidates align with your requirements:</p>
-            <ul>
-              <li>Resume Screening: Thorough evaluation of resumes to shortlist candidates with relevant experience and skills.</li>
-              <li>Two-Level Quality Check: A rigorous process to verify candidates' backgrounds, skills, and alignment with job requirements.</li>
-              <li>Skill Assessment: Testing candidates on their communication, sales aptitude, and ability to meet sales targets.</li>
-            </ul>
-          </div>
-        </div>
-      </section> */}
       <Footer />
     </>
   );
