@@ -3,14 +3,31 @@ import Navigation from "../Components/Navigations";
 import { BsBag } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
 import Footer from "../Components/Footer";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Jobseekers = () => {
+  const [Jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    async function fetchJobs() {
+      try {
+        const res = await fetch("/api/getJobs");
+        if (!res.ok) throw new Error("Failed to fetch jobs");
+        const data = await res.json();
+        setJobs(data);
+      } catch (error) {
+        console.error("Error fetching jobs:", error);
+      }
+    }
+    fetchJobs();
+  }, []);
   return (
     <>
       <Navigation />
       {/* <div className="bg-gradient-to-t from-zinc-50 to-zinc-300 min-h-screen px-6"> */}
-      <div className="bg-BgColor-homecolor min-h-screen px-6">
-        <div className="lg:p-20">
+      <div className="bg-BgColor-homecolor  px-6 lg:p-20">
+        <div className="">
           <h6 className="text-3xl sm:text-4xl font-bold text-center mb-5">
             Find and become a professional with passion
           </h6>
@@ -22,7 +39,7 @@ const Jobseekers = () => {
           </p>
 
           {/* Responsive Search Bar */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full max-w-2xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full max-w-2xl mx-auto mb-10">
             <div className="relative w-full sm:w-auto">
               <BsBag className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
               <input
@@ -44,8 +61,36 @@ const Jobseekers = () => {
             </button>
           </div>
         </div>
+
+        <div>
+          <ul>
+            {Jobs.map((Job) => (
+              <>
+                <li
+                  key={Job._id}
+                  className="border p-4 mb-6 rounded-lg shadow-md  bg-white"
+                >
+                  <h2 className="text-xl font-semibold">{Job.title}</h2>
+                  <h2 className="text-xl">{Job.location}</h2>
+                  <p className="mb-5">{Job.description}</p>
+                  <p className="mb-5">{Job.jobId}</p>
+                  <div className="flex gap-3 text-center">
+                    <Link href={`/Jobseekers/${Job.jobId}`}>
+                      <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
+                        View More
+                      </button>
+                    </Link>
+                    <h2>Multiple Vacancies</h2>
+                    <h2>Posted 30days ago</h2>
+                  </div>
+                </li>
+              </>
+            ))}
+          </ul>
+        </div>
       </div>
-         <Footer />
+
+      <Footer />
     </>
   );
 };
