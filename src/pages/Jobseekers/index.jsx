@@ -62,18 +62,24 @@ const Jobseekers = () => {
           </div>
         </div>
 
-        <div>
-          <ul>
+        <div >
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {Jobs.map((Job) => (
               <>
                 <li
                   key={Job._id}
                   className="border p-4 mb-6 rounded-lg shadow-md  bg-white"
                 >
-                  <h2 className="text-xl font-semibold">{Job.title}</h2>
-                  <h2 className="text-xl">{Job.location}</h2>
-                  <p className="mb-5">{Job.description}</p>
-                  <p className="mb-5">{Job.jobId}</p>
+                  <h2 className="text-xl font-semibold mb-3">{Job.title}</h2>
+                  <h2 className="text-xl mb-1 flex items-center gap-2">
+                    <FiMapPin className="text-gray-500" />
+                    {Job.location}
+                  </h2>
+
+                  <p className="mb-5 line-clamp-2 overflow-hidden text-ellipsis">
+                    {Job.description}
+                  </p>
+
                   <div className="flex gap-3 text-center">
                     <Link href={`/Jobseekers/${Job.jobId}`}>
                       <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">

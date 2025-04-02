@@ -10,7 +10,7 @@ const About = () => {
       <div className="bg-BgColor-homecolor min-h-screen w-full lg:flex lg:p-10">
 
         <div className="flex-1 ">
-          <img src="./about.png" alt="Sample" className="w-full object-cover" />
+          <img src="./AboutHero2.webp" alt="Sample" className="w-full object-cover" />
         </div>
 
         <div className="flex-1">

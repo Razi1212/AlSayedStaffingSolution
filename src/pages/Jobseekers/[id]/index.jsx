@@ -35,6 +35,7 @@ const JobDetails = ({ job }) => {
         );
     }
 
+    const [file, setFile] = useState([]);
     const [formData, setFormData] = useState({
         position: "",
         candidateName: "",
@@ -57,12 +58,40 @@ const JobDetails = ({ job }) => {
 
     // Handle Input Change
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+        console.log(JSON.stringify(formData))
+    };
+
+    const handleFileChange = (e) => {
+        setFile(e.target.files[0]);
     };
 
     // Handle Form Submission
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (!file) {
+            alert('Please select a file');
+            return;
+        }
+
+        const formDetails = new FormData();
+        formDetails.append('file', file);
+        formDetails.append('formData', JSON.stringify(formData));
+
+        const res = await fetch('/api/applyJob', {
+            method: 'POST',
+            body: formDetails,
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+            alert(`File uploaded: ${data.fileName}`);
+        } else {
+            alert(`Error: ${data.error}`);
+            console.log("error", data.error)
+        }
         console.log("Form Data Submitted:", formData);
         alert("Form submitted successfully!");
     };
@@ -70,46 +99,39 @@ const JobDetails = ({ job }) => {
     return (
         <div>
             <Navigation />
-            <div className="container mx-auto p-8">
+            <div className="container mx-auto p-8 text-base">
                 <h1 className="text-3xl font-bold mb-4">Job Title: {job.title || "N/A"}</h1>
 
-                <p className="text-gray-700 mb-2">
-                    <strong>industry:</strong> {job.industry || "N/A"}
+                <p className="text-gray-700 mb-4">
+                    <strong>Industry:</strong> {job.industry || "N/A"}
                 </p>
 
-                <p className="text-gray-700 mb-2">
+                <p className="text-gray-700 mb-4">
                     <strong>Location:</strong> {job.location || "N/A"}
                 </p>
-                <p className="text-gray-700 mb-2">
+                <p className="text-gray-700 mb-4 whitespace-pre-line break-words leading-4">
                     <strong>Description:</strong> {job.description || "No description available."}
                 </p>
 
-                <p className="text-gray-700 mb-2">
-                    <strong> responsibilities:</strong> {job.responsibilities || "No description available."}
+
+                <p className="text-gray-700 mb-4 whitespace-pre-line break-words leading-4">
+                    <strong>Responsibilities:</strong> {job.responsibilities || "No description available."}
                 </p>
 
-                <p className="text-gray-700 mb-2">
-                    <strong> qualifications:</strong> {job.qualifications || "No description available."}
+                <p className="text-gray-700 mb-4">
+                    <strong>Qualifications:</strong> {job.qualifications || "No description available."}
                 </p>
 
-                <p className="text-gray-700 mb-2">
-                    <strong> benefits:</strong> {job.benefits || "No description available."}
+                <p className="text-gray-700 mb-4 whitespace-pre-line break-words">
+                    <strong>Benefits:</strong> {job.benefits || "No description available."}
                 </p>
-                <Link href="/Apply">
-                    <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition">
-                        Apply
-                    </button>
-                </Link>
+            
 
             </div>
 
 
-            <div className='bg-slate-300 p-20 flex'>
-
-             
-
-
-                <div className="flex-1 "><form onSubmit={handleSubmit} className="space-y-6 bg-white p-10">
+            <div className="bg-slate-300 lg:px-60 py-2  w-full bg-[url('/Apply.jpeg')] bg-cover bg-center">
+                <div ><form onSubmit={handleSubmit} className="space-y-6 bg-white p-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                         <div className="form-group">
                             <label className="block text-sm font-medium">Position</label>
@@ -165,8 +187,8 @@ const JobDetails = ({ job }) => {
                             <label className="block text-sm font-medium">Email ID</label>
                             <input
                                 type="email"
-                                name="emailID"
-                                value={formData.emailID}
+                                name="email"
+                                value={formData.email}
                                 onChange={handleChange}
                                 className="p-2 border border-gray-300 rounded-md w-full"
                                 required
@@ -243,8 +265,8 @@ const JobDetails = ({ job }) => {
                             <label className="block text-sm font-medium">Current Company Name</label>
                             <input
                                 type="text"
-                                name="currentCompanyName"
-                                value={formData.currentCompanyName}
+                                name="currentCompany"
+                                value={formData.currentCompany}
                                 onChange={handleChange}
                                 className="p-2 border border-gray-300 rounded-md w-full"
                                 required
@@ -293,8 +315,8 @@ const JobDetails = ({ job }) => {
                             <label className="block text-sm font-medium">Education Qualification</label>
                             <input
                                 type="text"
-                                name="educationQualification"
-                                value={formData.educationQualification}
+                                name="education"
+                                value={formData.education}
                                 onChange={handleChange}
                                 className="p-2 border border-gray-300 rounded-md w-full"
                                 required
@@ -327,15 +349,24 @@ const JobDetails = ({ job }) => {
                         </div>
                     </div>
 
+                    <div>
+                        <label className="block text-sm font-medium">Upload Your Resume</label>
+                        <input type="file" name="file" onChange={handleFileChange} accept=".pdf" />
+                    </div>
+
                     <button
                         type="submit"
                         className="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
                     >
                         Submit
                     </button>
-                </form></div>
-
+                </form>
+                </div>
             </div>
+
+            {/* <div className="flex-1">
+                <img src="/Apply.jpeg" alt="Sample" className="w-full object-cover" />
+                </div> */}
 
             <Footer />
 

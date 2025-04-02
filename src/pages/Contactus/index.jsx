@@ -100,7 +100,7 @@ const Contactus = () => {
         </div>
         <div className="min-h-screen w-full flex-1 bg-gray-100 lg:mr-20 lg:mt-12 rounded-2xl shadow-2xl">
           <img
-            src="./contact-img.jpg"
+            src="./contact-img2.jpeg"
             alt="Sample"
             className="w-full rounded-lg shadow-lg object-cover"
           />
