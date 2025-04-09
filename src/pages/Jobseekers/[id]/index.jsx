@@ -99,7 +99,7 @@ const JobDetails = ({ job }) => {
     return (
         <div>
             <Navigation />
-            <div className="container mx-auto p-8 text-base">
+            {/* <div className="container mx-auto p-8 text-base bg-[url('/gel77777.jpg')] bg-cover bg-center w-full m-0">
                 <h1 className="text-3xl font-bold mb-4">Job Title: {job.title || "N/A"}</h1>
 
                 <p className="text-gray-700 mb-4">
@@ -125,13 +125,42 @@ const JobDetails = ({ job }) => {
                 <p className="text-gray-700 mb-4 whitespace-pre-line break-words">
                     <strong>Benefits:</strong> {job.benefits || "No description available."}
                 </p>
-            
+
+
+            </div> */}
+
+            <div className="bg-slate-300   w-full bg-[url('/gel77777.jpg')] bg-cover bg-center">
+                <h1 className="text-3xl font-bold mb-4">Job Title: {job.title || "N/A"}</h1>
+
+                <p className="text-gray-700 mb-4">
+                    <strong>Industry:</strong> {job.industry || "N/A"}
+                </p>
+
+                <p className="text-gray-700 mb-4">
+                    <strong>Location:</strong> {job.location || "N/A"}
+                </p>
+                <p className="text-gray-700 mb-4 whitespace-pre-line break-words leading-4">
+                    <strong>Description:</strong> {job.description || "No description available."}
+                </p>
+
+
+                <p className="text-gray-700 mb-4 whitespace-pre-line break-words leading-4">
+                    <strong>Responsibilities:</strong> {job.responsibilities || "No description available."}
+                </p>
+
+                <p className="text-gray-700 mb-4">
+                    <strong>Qualifications:</strong> {job.qualifications || "No description available."}
+                </p>
+
+                <p className="text-gray-700 mb-4 whitespace-pre-line break-words">
+                    <strong>Benefits:</strong> {job.benefits || "No description available."}
+                </p>
+
 
             </div>
 
-
-            <div className="bg-slate-300 lg:px-60 py-2  w-full bg-[url('/Apply.jpeg')] bg-cover bg-center">
-                <div ><form onSubmit={handleSubmit} className="space-y-6 bg-white p-10">
+            <div className="bg-slate-300 lg:px-60 lg:py-40  w-full bg-[url('/Apply.jpeg')] bg-cover bg-center">
+                <div ><form onSubmit={handleSubmit} className="space-y-6 bg-white p-10 rounded-xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                         <div className="form-group">
                             <label className="block text-sm font-medium">Position</label>
@@ -140,7 +169,7 @@ const JobDetails = ({ job }) => {
                                 name="position"
                                 value={formData.position}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -151,7 +180,7 @@ const JobDetails = ({ job }) => {
                                 name="candidateName"
                                 value={formData.candidateName}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -165,7 +194,7 @@ const JobDetails = ({ job }) => {
                                 name="nationality"
                                 value={formData.nationality}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -176,7 +205,7 @@ const JobDetails = ({ job }) => {
                                 name="contactNumber"
                                 value={formData.contactNumber}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -190,7 +219,7 @@ const JobDetails = ({ job }) => {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -201,7 +230,7 @@ const JobDetails = ({ job }) => {
                                 name="currentLocation"
                                 value={formData.currentLocation}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -215,7 +244,7 @@ const JobDetails = ({ job }) => {
                                 name="dob"
                                 value={formData.dob}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -226,7 +255,7 @@ const JobDetails = ({ job }) => {
                                 name="passportNumber"
                                 value={formData.passportNumber}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -239,7 +268,7 @@ const JobDetails = ({ job }) => {
                                 name="ecnrEcr"
                                 value={formData.ecnrEcr}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             >
                                 <option value="">Select</option>
@@ -254,7 +283,7 @@ const JobDetails = ({ job }) => {
                                 name="passportExpiry"
                                 value={formData.passportExpiry}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -268,7 +297,7 @@ const JobDetails = ({ job }) => {
                                 name="currentCompany"
                                 value={formData.currentCompany}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -279,7 +308,7 @@ const JobDetails = ({ job }) => {
                                 name="localExperience"
                                 value={formData.localExperience}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -293,7 +322,7 @@ const JobDetails = ({ job }) => {
                                 name="internationalExperience"
                                 value={formData.internationalExperience}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -304,7 +333,7 @@ const JobDetails = ({ job }) => {
                                 name="totalExperience"
                                 value={formData.totalExperience}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -318,7 +347,7 @@ const JobDetails = ({ job }) => {
                                 name="education"
                                 value={formData.education}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -329,7 +358,7 @@ const JobDetails = ({ job }) => {
                                 name="currentSalary"
                                 value={formData.currentSalary}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
@@ -343,7 +372,7 @@ const JobDetails = ({ job }) => {
                                 name="expectedSalary"
                                 value={formData.expectedSalary}
                                 onChange={handleChange}
-                                className="p-2 border border-gray-300 rounded-md w-full"
+                                className="w-full outline-none bg-transparent focus:outline-none border-b border-gray-400"
                                 required
                             />
                         </div>
