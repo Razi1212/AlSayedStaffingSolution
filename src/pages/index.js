@@ -126,7 +126,7 @@ export default function () {
 
           <div className="flex-1">
             <img
-              src="./lo2.jpeg"
+              src="./lo22.png"
               alt="Professional team working together in the Gulf region"
               className="w-full object-cover rounded-lg"
             />
@@ -147,9 +147,9 @@ export default function () {
 
           <div className="flex-1">
             <img
-              src="./AboutHero.jpeg"
+              src="./AboutHero2.png"
               alt="Description of the image"
-              className="lg:w-full lg:h-auto w-52 h-52 mx-auto"
+              className="lg:w-full lg:h-auto max-h-[500px]"
             />
           </div>
 
@@ -220,9 +220,9 @@ export default function () {
           {/* Right Image */}
           <div className="max-w-md md:max-w-lg w-full">
             <img
-              src="./Carrer.jpeg"
+              src="./Carrer1.png"
               alt="Professional team working together"
-              className="w-full h-auto object-cover rounded-lg shadow-xl"
+              className="w-full h-auto object-cover"
             />
 
           </div>

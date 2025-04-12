@@ -9,8 +9,24 @@ const About = () => {
       <Navigation />
       <div className="bg-BgColor-homecolor min-h-screen w-full lg:flex lg:p-10">
 
-        <div className="flex-1 ">
-          <img src="./AboutHero2.webp" alt="Sample" className="w-full object-cover" />
+        {/* <div className="flex-1 ">
+          <img src="./AboutHero222.png" alt="Sample" className="w-full h-auto object-cover" />
+        </div> */}
+        <div className="flex-1">
+          {/* <img
+            src="./AboutHero222.png"
+            alt="Sample"
+            className="w-full h-auto max-h-[500px] object-contain"
+          /> */}
+          <img
+            src="./AboutHero222.png"
+            alt="Sample"
+            // className="w-full h-auto max-h-[500px] max-w-[90%] sm:h-96 md:max-w-[70%] lg:max-w-[600px] mx-auto object-contain"
+             className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
+          />
+
+
         </div>
 
         <div className="flex-1">
