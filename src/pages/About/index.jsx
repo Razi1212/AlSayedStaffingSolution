@@ -1,14 +1,12 @@
 import React from "react";
 import Navigation from "../Components/Navigations";
-import { FaArrowRight, FaCheckDouble } from "react-icons/fa";
+import { FaCheckDouble } from "react-icons/fa";
 import Footer from "../Components/Footer";
-import SplitText from "./SplitText"; 
+
 
 
 const About = () => {
-  const handleAnimationComplete = () => {
-    console.log('All letters have animated!');
-  };
+
   return (
     <>
       <Navigation />
@@ -27,18 +25,8 @@ const About = () => {
           </div>
 
           <div className="flex-1">
-            <SplitText
-              text="Unlock Your Potential with Al Sayed Staffing Solutions"
-              className="text-3xl font-bold text-gray-900 mt-6"
-              delay={150}
-              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-              easing="easeOutCubic"
-              threshold={0.2}
-              rootMargin="-50px"
-              onLetterAnimationComplete={handleAnimationComplete}
-            />
-            {/* <h6 className="text-3xl font-bold text-gray-900 mt-6">Unlock Your Potential with Al Sayed Staffing Solutions</h6> */}
+        
+            <h6 className="text-3xl font-bold text-gray-900 mt-6">Unlock Your Potential with Al Sayed Staffing Solutions</h6>
             <p className="my-5 inline-flex items-start text-base ">
               <span>
                 In today's competitive market, finding the right talent or the perfect career opportunity is crucial. Al Sayed Staffing Solutions, established in 2023, is your trusted partner in navigating this landscape. We bring together a team of highly experienced professionals dedicated to delivering exceptional staffing solutions across the GCC.

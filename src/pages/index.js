@@ -67,14 +67,15 @@ export default function () {
         </Carousel>
       </div>
 
-      <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  px-8 py-6 lg:px-[5%] lg:py-[5%] xl:px-[8%] xl:py-[8%]">
+      {/* <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  px-8 py-6 lg:px-[5%] lg:py-[5%] xl:px-[8%] xl:py-[8%]"> */}
+      <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  lg:p-[8%] p-5">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 ">
           <div className="flex-1 space-y-4">
-            <h6 className="lg:text-4xl xl:text-3xl md:text-4xl font-bold text-gray-900">
+            <h6 className="text-3xl font-bold text-gray-900">
               Career Opportunities Await You in the Gulf – Start Your Journey
               Now!
             </h6>
-            <p className="text-lg lg:text-xl">
+            <p className="text-base">
               Looking for exciting career opportunities in the Gulf region?
               Explore a wide range of job openings in the thriving Oil & Gas and
               Healthcare industries, two of the most in-demand sectors in the
@@ -128,10 +129,12 @@ export default function () {
             <img
               src="./lo22.png"
               alt="Professional team working together in the Gulf region"
-              className="w-full object-cover rounded-lg"
+              className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
             />
           </div>
         </div>
+
         <div className="mt-6">
           <Link href="/Jobseekers">
             <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
@@ -141,23 +144,25 @@ export default function () {
         </div>
       </section>
 
-      <section className=" bg-cyan-50 font-geist">
+      <section className=" bg-BgColor-homecolor font-geist">
 
-        <div className="lg:flex lg:mx-[5%] lg:py-[5%]">
+        <div className="lg:flex lg:p-[8%]">
 
           <div className="flex-1">
             <img
-              src="./AboutHero2.png"
+              src="./AboutHero22.png"
               alt="Description of the image"
-              className="lg:w-full lg:h-auto max-h-[500px]"
+              // className="lg:w-full lg:h-auto max-h-[500px]"
+              className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
             />
           </div>
 
           <div className="flex-1  py-10 px-6">
-            <h3 className="text-2xl font-bold text-gray-800 lg:text-3xl  lg:text-gray-900  xl:mb-[5%]">
+            <h3 className="text-3xl font-bold text-gray-800  lg:text-gray-900 ">
               Connecting Regional Talent with Gulf Opportunities.
             </h3>
-            <p className="mt-4 text-gray-900 lg:text-xl">
+            <p className="mt-4 text-gray-900 md:text-lg text-base">
               We specialize in placing skilled professionals across key Gulf
               industries, including oil and gas, construction, manufacturing,
               finance, retail, hospitality, IT, and healthcare. Our tailored
@@ -173,14 +178,9 @@ export default function () {
           </div>
         </div>
       </section>
-      
-
-
-
    
-
       <section
-        className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center "
+        className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-homecolor"
        
       >
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
