@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "../Components/Navigations";
 import { FaArrowRight, FaCheckDouble } from "react-icons/fa";
 import Footer from "../Components/Footer";
-import GradientText from './GradientText'
+import SplitText from "./SplitText"; 
 
 
 const About = () => {
@@ -24,14 +24,16 @@ const About = () => {
           </div>
 
           <div className="flex-1">
-            <GradientText
-              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-              animationSpeed={3}
-              showBorder={false}
-              className="custom-class text-3xl font-bold mt-6"
-            >
-              Unlock Your Potential with Al Sayed Staffing Solutions
-            </GradientText>
+            <SplitText
+              text="Unlock Your Potential with Al Sayed Staffing Solutions"
+              className="text-3xl font-bold text-gray-900 mt-6"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+            />
             {/* <h6 className="text-3xl font-bold text-gray-900 mt-6">Unlock Your Potential with Al Sayed Staffing Solutions</h6> */}
             <p className="my-5 inline-flex items-start text-base ">
               <span>
