@@ -33,7 +33,7 @@ export default function () {
     <>
       <Navigations />
 
-      <div className="relative w-full h-screen overflow-hidden">
+      {/* <div className="relative w-full h-screen overflow-hidden">
         <Carousel
           showArrows={false}
           showStatus={false}
@@ -65,8 +65,26 @@ export default function () {
             </div>
           ))}
         </Carousel>
-      </div>
+      </div> */}
 
+      <div className="relative w-full h-[500px] overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+        >
+          <source src="./video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Your content on top of the video */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+          <h1 className="text-5xl font-bold">  Al Sayed-Staffing-Solution</h1>
+          <p className="text-xl mt-4">Al Sayed Staffing Solutions is a premier recruitment agency specializing in connecting Gulf region businesses with exceptional talent</p>
+        </div>
+      </div>
       {/* <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  px-8 py-6 lg:px-[5%] lg:py-[5%] xl:px-[8%] xl:py-[8%]"> */}
       <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  lg:p-[8%] p-5">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 ">
@@ -145,9 +163,7 @@ export default function () {
       </section>
 
       <section className=" bg-BgColor-homecolor font-geist">
-
         <div className="lg:flex lg:p-[8%]">
-
           <div className="flex-1">
             <img
               src="./AboutHero22.png"
@@ -178,11 +194,8 @@ export default function () {
           </div>
         </div>
       </section>
-   
-      <section
-        className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-homecolor"
-       
-      >
+
+      <section className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-homecolor">
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
           {/* Left Content */}
           <div className="text-center md:text-left max-w-2xl">
@@ -224,29 +237,10 @@ export default function () {
               alt="Professional team working together"
               className="w-full h-auto object-cover"
             />
-
           </div>
         </div>
       </section>
 
-      <div className="relative w-full h-screen overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-      >
-        <source src="./video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Your content on top of the video */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-        <h1 className="text-5xl font-bold">Welcome</h1>
-        <p className="text-xl mt-4">This is a background video example.</p>
-      </div>
-    </div>
       <Footer />
     </>
   );
