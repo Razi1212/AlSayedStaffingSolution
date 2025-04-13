@@ -228,6 +228,25 @@ export default function () {
           </div>
         </div>
       </section>
+
+      <div className="relative w-full h-screen overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+      >
+        <source src="/video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Your content on top of the video */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+        <h1 className="text-5xl font-bold">Welcome</h1>
+        <p className="text-xl mt-4">This is a background video example.</p>
+      </div>
+    </div>
       <Footer />
     </>
   );
