@@ -6,6 +6,9 @@ import SplitText from "./SplitText";
 
 
 const About = () => {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
   return (
     <>
       <Navigation />
@@ -33,6 +36,7 @@ const About = () => {
               easing="easeOutCubic"
               threshold={0.2}
               rootMargin="-50px"
+              onLetterAnimationComplete={handleAnimationComplete}
             />
             {/* <h6 className="text-3xl font-bold text-gray-900 mt-6">Unlock Your Potential with Al Sayed Staffing Solutions</h6> */}
             <p className="my-5 inline-flex items-start text-base ">
