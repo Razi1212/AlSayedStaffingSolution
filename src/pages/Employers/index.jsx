@@ -348,8 +348,8 @@ const Industries = () => {
                 <div className="p-5">
                   <h6 className="text-lg font-semibold">Consumer Electronics</h6>
                   <ul className="text-sm">
-                    <li>✔️ Networking</li>
-                    <li>✔️ Embedded</li>
+                    <li>✔️  Core Banking Application Implementation</li>
+                    <li>✔️ Interface Development</li>
                     <li>✔️ Test Automation</li>
                     <li>✔️ Firmware Development</li>
 
@@ -384,12 +384,12 @@ const Industries = () => {
                 </div>
 
                 <div className="p-5">
-                  <h6 className="text-lg font-semibold">Consumer Electronics</h6>
+                  <h6 className="text-lg font-semibold">Hi-Tech</h6>
                   <ul className="text-sm">
-                    <li>✔️ Networking</li>
-                    <li>✔️ Embedded</li>
-                    <li>✔️ Test Automation</li>
-                    <li>✔️ Firmware Development</li>
+                    <li>✔️  Product Engineering</li>
+                    <li>✔️  Product Testing (Automated)</li>
+                    <li>✔️  Mobility</li>
+                    <li>✔️  Internet Of Things</li>
 
                   </ul>
                 </div>
@@ -406,13 +406,30 @@ const Industries = () => {
                   <img src="./construction.jpg" alt="Sample" className="w-full object-cover rounded-b-[100px] rounded-lg " />
                 </div>
 
-                <div>
-                  <h6 className="text-lg font-semibold">Consumer Electronics</h6>
+                <div className="p-5">
+                  <h6 className="text-lg font-semibold"> Banking & Finance</h6>
                   <ul className="text-sm">
-                    <li>✔️ Networking</li>
-                    <li>✔️ Embedded</li>
-                    <li>✔️ Test Automation</li>
-                    <li>✔️ Firmware Development</li>
+                    <li>✔️ Core Banking Application Implementation</li>
+                    <li>✔️ Interface Development</li>
+                    <li>✔️  Products (Govt .Business Framework)</li>
+                  </ul>
+                </div>
+
+
+              </div>
+
+              <div className="bg-white">
+                <div>
+                  <img src="./construction.jpg" alt="Sample" className="w-full object-cover rounded-b-[100px] rounded-lg " />
+                </div>
+
+                <div className="p-5">
+                  <h6 className="text-lg font-semibold">Retail & E-commerce</h6>
+                  <ul className="text-sm">
+                    <li>✔️ E-commerce Enablement</li>
+                    <li>✔️ Product Catalog Systems/Warehouse Systems</li>
+                    <li>✔️ Enterprise Mobility</li>
+                    <li>✔️ Cloud Native Development</li>
 
                   </ul>
                 </div>
@@ -425,37 +442,16 @@ const Industries = () => {
                   <img src="./construction.jpg" alt="Sample" className="w-full object-cover rounded-b-[100px] rounded-lg " />
                 </div>
 
-                <div>
-                  <h6 className="text-lg font-semibold">Consumer Electronics</h6>
+                <div className="p-5">
+                  <h6 className="text-lg font-semibold">Automotive and Manufacturing</h6>
                   <ul className="text-sm">
-                    <li>✔️ Networking</li>
-                    <li>✔️ Embedded</li>
-                    <li>✔️ Test Automation</li>
-                    <li>✔️ Firmware Development</li>
+                    <li>✔️  Customer Development and Maintence</li>
+                    <li>✔️ Application Migration (Cloud)</li>
+                    <li>✔️ Mobility</li>
+                    <li>✔️  Testing & QA/Devpos</li>
 
                   </ul>
                 </div>
-
-
-              </div>
-
-              <div className="bg-white">
-                <div>
-                  <img src="./construction.jpg" alt="Sample" className="w-full object-cover rounded-b-[100px] rounded-lg " />
-                </div>
-
-                <div>
-                  <h6 className="text-lg font-semibold">Consumer Electronics</h6>
-                  <ul className="text-sm">
-                    <li>✔️ Networking</li>
-                    <li>✔️ Embedded</li>
-                    <li>✔️ Test Automation</li>
-                    <li>✔️ Firmware Development</li>
-
-                  </ul>
-                </div>
-
-
               </div>
 
             </div>
