@@ -346,7 +346,7 @@ const Industries = () => {
                 </div>
 
                 <div className="p-5">
-                  <h6 className="text-lg font-semibold">Consumer Electronics</h6>
+                  <h6 className="text-lg font-semibold">Banking & Finance</h6>
                   <ul className="text-sm">
                     <li>✔️  Core Banking Application Implementation</li>
                     <li>✔️ Interface Development</li>
@@ -407,11 +407,11 @@ const Industries = () => {
                 </div>
 
                 <div className="p-5">
-                  <h6 className="text-lg font-semibold"> Banking & Finance</h6>
+                  <h6 className="text-lg font-semibold">Healthcare & Life Sciences</h6>
                   <ul className="text-sm">
-                    <li>✔️ Core Banking Application Implementation</li>
-                    <li>✔️ Interface Development</li>
-                    <li>✔️  Products (Govt .Business Framework)</li>
+                    <li>✔️ Customer Application </li>
+                    <li>✔️ Interface of things</li>
+                    <li>✔️ Patient Care (Products & Frameworks)</li>
                   </ul>
                 </div>
 
@@ -429,7 +429,6 @@ const Industries = () => {
                     <li>✔️ E-commerce Enablement</li>
                     <li>✔️ Product Catalog Systems/Warehouse Systems</li>
                     <li>✔️ Enterprise Mobility</li>
-                    <li>✔️ Cloud Native Development</li>
 
                   </ul>
                 </div>
@@ -447,7 +446,6 @@ const Industries = () => {
                   <ul className="text-sm">
                     <li>✔️  Customer Development and Maintence</li>
                     <li>✔️ Application Migration (Cloud)</li>
-                    <li>✔️ Mobility</li>
                     <li>✔️  Testing & QA/Devpos</li>
 
                   </ul>
