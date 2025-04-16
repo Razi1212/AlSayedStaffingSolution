@@ -5,68 +5,10 @@ import Link from "next/link";
 import CountUp from "./Countup";
 import Footer from "./Components/Footer";
 
-const slides = [
-  {
-    image: "./Construction.jpeg",
-    title: "About",
-    description:
-      "Al Sayed Staffing Solutions is a premier recruitment agency specializing in connecting Gulf region businesses with exceptional talent",
-    link: "/About",
-  },
-  {
-    image: "./Discussion.jpeg",
-    title: "Home",
-    description:
-      "Specialized Recruiters For Different Skills, Domain & Industry Verticals.",
-    link: "/About",
-  },
-  {
-    image: "./Research.jpeg",
-    title: "Services",
-    description: "Minimizing The Response Time – Sourcing to Onboarding",
-    link: "/About",
-  },
-];
-
 export default function () {
   return (
     <>
       <Navigations />
-
-      {/* <div className="relative w-full h-screen overflow-hidden">
-        <Carousel
-          showArrows={false}
-          showStatus={false}
-          showIndicators={false}
-          infiniteLoop
-          autoPlay
-          emulateTouch
-          interval={3000}
-        >
-          {slides.map((slide, index) => (
-            <div key={index} className="relative w-full h-screen">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 px-4">
-                <h1 className="text-2xl md:text-4xl font-bold mb-4">
-                  {slide.title}
-                </h1>
-                <p className="text-base md:text-xl mb-4">{slide.description}</p>
-                <Link
-                  href={slide.link}
-                  className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          ))}
-        </Carousel>
-      </div> */}
-
       <div className="relative w-full h-[500px] overflow-hidden">
         <video
           autoPlay
@@ -75,14 +17,18 @@ export default function () {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
         >
-          <source src="./video1.mp4" type="video/mp4" />
+          <source src="./video2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Your content on top of the video */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-          <h1 className="text-5xl font-bold">  Al Sayed-Staffing-Solution</h1>
-          <p className="text-xl mt-4">Al Sayed Staffing Solutions is a premier recruitment agency specializing in connecting Gulf region businesses with exceptional talent</p>
+          <h1 className="text-5xl font-bold"> Al Sayed-Staffing-Solution</h1>
+          <p className="text-xl mt-4">
+            Al Sayed Staffing Solutions is a premier recruitment agency
+            specializing in connecting Gulf region businesses with exceptional
+            talent
+          </p>
         </div>
       </div>
       {/* <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  px-8 py-6 lg:px-[5%] lg:py-[5%] xl:px-[8%] xl:py-[8%]"> */}
@@ -241,6 +187,84 @@ export default function () {
         </div>
       </section>
 
+      <section className="lg:p-[8%]">
+        <h6 className="text-xl font-semibold text-gray-800">
+          Insights from the People We've Placed
+        </h6>
+        <br />
+        <span className="text-base text-gray-600">
+          Hear from individuals who trusted us with their careers. Their stories
+          reflect the value, guidance, and impact our consulting services
+          deliver every day.
+        </span>
+
+        <div className="lg:flex">
+          <div className="p-10 ">
+            <div className="flex justify-center items-center mb-4">
+              <img
+                src="./pic2.jpeg"
+                alt="Sample"
+                className="w-40 h-40 object-cover rounded-full border-4 border-rose-400"
+              />
+            </div>
+
+            <h3 className="bg-rose-400 text-white  p-4 text-center rounded-2xl">
+              Abdullah
+            </h3>
+            <h3 className="text-rose-400 p-4">
+              Designation : Software Developer
+            </h3>
+            <div className="border-2  border-rose-400 p-10 rounded-md">
+              <p>
+                The team understood my career goals and matched me with a role
+                that truly fits. Highly recommend their services
+              </p>
+            </div>
+          </div>
+
+          <div className="p-10">
+            <div className="flex justify-center items-center mb-4">
+              <img
+                src="./pic2.jpeg"
+                alt="Sample"
+                className="w-40 h-40 object-cover rounded-full border-4  border-teal-900 "
+              />
+            </div>
+            <h3 className="bg-teal-900 text-white  p-4 text-center rounded-2xl">
+              Imran H
+            </h3>
+            <h3 className="text-teal-900 p-4">Designation : Data Analyst</h3>
+            <div className="border-2  border-teal-900 p-10 rounded-md">
+              <p>
+                Their team took care of everything — scheduling, follow-ups, and
+                even salary negotiation. I felt truly supported.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-10">
+            <div className="flex justify-center items-center mb-4    " >
+              <img
+                src="./pic2.jpeg"
+                alt="Sample"
+                className="w-40 h-40 object-cover rounded-full border-4 border-zinc-600"
+              />
+            </div>
+            <h3 className="bg-zinc-600 text-white  p-4 text-center rounded-2xl">
+              Fatima A., UX Designer
+            </h3>
+            <h3 className="text-zinc-600 p-4">
+              Designation : Front-End Developer
+            </h3>
+            <div className="border-2  border-zinc-600 p-10 rounded-md">
+              <p>
+                From CV optimization to company insights, their guidance gave me
+                the edge I needed. Can’t thank them enough!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
