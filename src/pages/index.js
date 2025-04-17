@@ -141,6 +141,7 @@ export default function () {
         </div>
       </section>
 
+
       <section className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-homecolor">
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
           {/* Left Content */}
@@ -183,6 +184,35 @@ export default function () {
               alt="Professional team working together"
               className="w-full h-auto object-cover"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className=" bg-BgColor-homecolor font-white">
+        <div className="lg:flex lg:p-[8%]">
+          <div className="flex-1">
+            <img
+              src="./Employers.png"
+              alt="Description of the image"
+              // className="lg:w-full lg:h-auto max-h-[500px]"
+              className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
+            />
+          </div>
+
+          <div className="flex-1  py-10 px-6">
+            <h3 className="text-3xl font-bold text-gray-800  lg:text-gray-900 ">
+              From Search to Success — We’ve Got You Covered
+            </h3>
+            <p className="mt-4 text-gray-900 md:text-lg text-base">
+              Looking to hire top talent or streamline your recruitment process? Our consultancy services are tailored to meet your hiring needs. We partner with companies across industries to deliver customized staffing solutions, saving you time and resources. Whether you're scaling quickly or searching for niche skills, our team is here to support your growth.
+            </p>
+
+            <Link href="/Employers">
+              <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                Go to Employers
+              </button>
+            </Link>
           </div>
         </div>
       </section>
