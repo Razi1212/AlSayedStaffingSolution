@@ -12,13 +12,10 @@ const StickySection = ({ children, index }) => {
     offset: ['start end', 'end start'],
   });
 
-  ///const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
-
   return (
     <motion.div
       ref={sectionRef}
-      className="sticky top-0 flex  px-4 py-10  bg-white lg:px-[8%] lg:py-[5%]"
-    //style={{ opacity }}
+      className="sticky top-0 flex  px-4 py-10  bg-BgColor-homecolor lg:px-[8%] lg:py-[5%]"
     >
       <div className=" w-full  shadow-lg rounded-xl bg-yellow-200 ">
         {children}
@@ -33,7 +30,7 @@ export default function SidebarTabs() {
       <Navigation />
       <div>
         <StickySection index={0}>
-          <div className="bg-green-50 w-full lg:flex p-10">
+          <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex p-10">
             <div>
               <h4 className="text-xl font-medium mb-2">Job Search Assistance</h4>
               <p className="text-gray-700 mb-4">
@@ -86,7 +83,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={1}>
-          <div className="bg-slate-200 w-full lg:flex p-10">
+          <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex p-10">
             <div>
              
               <img
@@ -129,7 +126,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={2}>
-          <div className="bg-green-200 w-full lg:flex p-10">
+          <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex p-10">
             <div>
               <h4 className="text-xl font-medium mb-2">Interview Coaching</h4>
               <p className="text-gray-700 mb-4">
@@ -174,7 +171,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={3}>
-          <div className="bg-slate-500 w-full lg:flex p-10">
+          <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex p-10">
             <div>
               <h4 className="text-xl font-medium mb-2">Documents Attestation</h4>
               <p className="text-gray-700 mb-4">
@@ -213,7 +210,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={4}>
-          <div className="bg-slate-500 w-full lg:flex p-10">
+          <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex p-10">
             <div>
               <h4 className="text-xl font-medium mb-2">Visa Processing Assistance</h4>
               <p className="text-gray-700 mb-4">
@@ -252,7 +249,7 @@ export default function SidebarTabs() {
 
 
         <StickySection index={5}>
-          <div className="bg-slate-500 w-full lg:flex p-10">
+          <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex p-10">
             <div>
               <h4 className="text-xl font-medium mb-2">Pre departure Guidance</h4>
               <p className="text-gray-700 mb-4">
