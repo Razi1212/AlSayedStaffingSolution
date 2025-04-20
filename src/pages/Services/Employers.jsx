@@ -17,7 +17,7 @@ const StickySection = ({ children, index }) => {
   return (
     <motion.div
       ref={sectionRef}
-      className="h-screen sticky top-0 flex items-center justify-center px-4  bg-BgColor-homecolor lg:px-[8%] lg:py-[8%]"
+      className="sticky top-0 flex  px-4 py-10  bg-white lg:px-[8%] lg:py-[5%]"
     //style={{ opacity }}
     >
       <div className=" w-full  shadow-lg rounded-xl bg-yellow-200 ">
@@ -28,10 +28,6 @@ const StickySection = ({ children, index }) => {
 };
 
 export default function SidebarTabs() {
-
-
-
-
   return (
     <>
       <Navigation />
@@ -66,16 +62,7 @@ export default function SidebarTabs() {
                   building professional connections, leveraging LinkedIn, and
                   attending industry events to expand your career opportunities.
                 </li>
-                <li>
-                  <strong>Optimized Job Portal Navigation:</strong> We guide you
-                  through the most effective job search platforms, helping you create
-                  strong profiles and use the right keywords to stand out.
-                </li>
-                <li>
-                  <strong>Networking Strategies:</strong> We offer insights on
-                  building professional connections, leveraging LinkedIn, and
-                  attending industry events to expand your career opportunities.
-                </li>
+
               </ul>
             </div>
             <div>
@@ -87,7 +74,7 @@ export default function SidebarTabs() {
                     /> */}
 
               <img
-                src="./AboutHero2222.png"
+                src="/pics.jpg"
                 alt="Sample"
                 className="w-full h-auto object-contain 
              max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
@@ -101,15 +88,9 @@ export default function SidebarTabs() {
         <StickySection index={1}>
           <div className="bg-slate-200 w-full lg:flex p-10">
             <div>
-              {/* <img
-                src="/Laptop.jpeg"
-                alt="Sample"
-                className="w-full h-auto object-contain 
-                        "
-              /> */}
-
-<img
-                src="./AboutHero2222.png"
+             
+              <img
+                src="/pics2.jpeg"
                 alt="Sample"
                 className="w-full h-auto object-contain 
              max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
@@ -179,20 +160,130 @@ export default function SidebarTabs() {
 
 
             <div>
-              {/* <img
-                src="/Laptop.jpeg"
-                alt="Sample"
-                className="w-full h-auto object-contain 
-                        "
-              /> */}
-
-<img
-                src="./AboutHero2222.png"
+             
+              <img
+                src="/pics3.jpeg"
                 alt="Sample"
                 className="w-full h-auto object-contain 
              max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
               />
-    
+
+            </div>
+
+          </div>
+        </StickySection>
+
+        <StickySection index={3}>
+          <div className="bg-slate-500 w-full lg:flex p-10">
+            <div>
+              <h4 className="text-xl font-medium mb-2">Documents Attestation</h4>
+              <p className="text-gray-700 mb-4">
+                Many employers and visa authorities require verified documents for job applications and immigration purposes. We assist in attesting your essential documents to meet regulatory and employer requirements.
+              </p>
+              <h4 className="text-xl font-medium mb-2 mt-4">
+                Our Resume Services Include:
+              </h4>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  <strong>Educational Document Attestation:</strong> Verification and authentication of degrees, diplomas, and transcripts.
+                </li>
+                <li>
+                  <strong>Professional Document Attestation:</strong> Certification of work experience letters, licenses, and professional certifications.
+
+                </li>
+                <li>
+                  <strong>Legalization & Embassy Verification:</strong>Assistance in notarization, legalization, and embassy verification of documents as per country-specific requirements.
+                </li>
+              </ul>
+            </div>
+
+
+            <div>
+           
+              <img
+                src="/pics4.jpeg"
+                alt="Sample"
+                className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
+              />
+
+            </div>
+
+          </div>
+        </StickySection>
+
+        <StickySection index={4}>
+          <div className="bg-slate-500 w-full lg:flex p-10">
+            <div>
+              <h4 className="text-xl font-medium mb-2">Visa Processing Assistance</h4>
+              <p className="text-gray-700 mb-4">
+                Securing a work visa can be a complex and time-consuming process. Our team simplifies the process by providing step-by-step guidance and ensuring compliance with immigration regulations.
+              </p>
+              <h4 className="text-xl font-medium mb-2 mt-4">
+                How We Support Your Job Search:
+              </h4>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  <strong>Eligibility Assessment:</strong>We help determine the best visa category based on your qualifications and job offer.
+                </li>
+                <li>
+                  <strong>Document Preparation:</strong> Guidance on gathering and organizing required documents such as passports, employment contracts, and medical reports
+                </li>
+                <li>
+                  <strong>Application Submission Support:</strong>  We assist in completing and submitting visa applications correctly to avoid delays or rejections.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+      
+
+              <img
+                src="/pics6.jpeg"
+                alt="Sample"
+                className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
+              />
+
+            </div>
+
+          </div>
+        </StickySection>
+
+
+        <StickySection index={5}>
+          <div className="bg-slate-500 w-full lg:flex p-10">
+            <div>
+              <h4 className="text-xl font-medium mb-2">Pre departure Guidance</h4>
+              <p className="text-gray-700 mb-4">
+              Securing a work visa can be a complex and time-consuming process. Our team simplifies the process by providing step-by-step guidance and ensuring compliance with immigration regulations.
+              </p>
+              <h4 className="text-xl font-medium mb-2 mt-4">
+                How We Support Your Job Search:
+              </h4>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>
+                  <strong>Eligibility Assessment:</strong>We help determine the best visa category based on your qualifications and job offer.
+                </li>
+                <li>
+                  <strong>Document Preparation:</strong> Guidance on gathering and organizing required documents such as passports, employment contracts, and medical reports
+                </li>
+                <li>
+                  <strong>Application Submission Support:</strong>  We assist in completing and submitting visa applications correctly to avoid delays or rejections.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+             
+
+              <img
+                src="/pics5.jpeg"
+                alt="Sample"
+                className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
+              />
+
             </div>
 
           </div>
