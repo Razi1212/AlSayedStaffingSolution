@@ -24,6 +24,7 @@ export default {
 				Services:'rgb(255,255,255)',
 				career:'rgb(242, 240, 230)',
 				NavNewColor:'rgb(11,20,63)',
+				ServicesJobseekers:'rgb(200,223,207)'
 				
   			},
 			
