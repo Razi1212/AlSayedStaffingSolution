@@ -25,7 +25,7 @@ const Jobseekers = () => {
   return (
     <>
       <Navigation />
-      {/* <div className="bg-gradient-to-t from-zinc-50 to-zinc-300 min-h-screen px-6"> */}
+    
       <div className="bg-BgColor-homecolor  px-6 lg:p-20">
         <div className="">
           <h6 className="text-3xl sm:text-4xl font-bold text-center mb-5">
