@@ -1,14 +1,26 @@
 import Navigations from "./Components/Navigations";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
 import Link from "next/link";
 import CountUp from "./Countup";
 import Footer from "./Components/Footer";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function () {
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true });
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <>
       <Navigations />
+
       <div className="relative w-full h-[500px] overflow-hidden">
         <video
           autoPlay
@@ -32,25 +44,32 @@ export default function () {
         </div>
       </div>
 
-
-      {/* <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  px-8 py-6 lg:px-[5%] lg:py-[5%] xl:px-[8%] xl:py-[8%]"> */}
       <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]  lg:p-[8%] px-5 py-14">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6 ">
           <div className="flex-1 space-y-4">
-            <h6 className="text-3xl font-bold text-gray-900">
-              Career Opportunities Await You in the Gulf – Start Your Journey
-              Now!
-            </h6>
-            <p className="text-base">
-              Looking for exciting career opportunities in the Gulf region?
-              Explore a wide range of job openings in the thriving Oil & Gas and
-              Healthcare industries, two of the most in-demand sectors in the
-              region. With the Gulf's rapid development and investment in energy
-              and healthcare infrastructure, top companies are actively seeking
-              skilled professionals to fill roles in engineering, project
-              management, healthcare administration, medical professionals, and
-              more.
-            </p>
+            <motion.div
+              ref={ref1}
+              variants={fadeInUp}
+              initial="hidden"
+              animate={isInView1 ? "visible" : "hidden"}
+              transition={{ duration: 1.2 }}
+              className="flex-1 space-y-4"
+            >
+              <h6 className="text-3xl font-bold text-gray-900">
+                Career Opportunities Await You in the Gulf – Start Your Journey
+                Now!
+              </h6>
+              <p className="text-base">
+                Looking for exciting career opportunities in the Gulf region?
+                Explore a wide range of job openings in the thriving Oil & Gas
+                and Healthcare industries, two of the most in-demand sectors in
+                the region. With the Gulf's rapid development and investment in
+                energy and healthcare infrastructure, top companies are actively
+                seeking skilled professionals to fill roles in engineering,
+                project management, healthcare administration, medical
+                professionals, and more.
+              </p>
+            </motion.div>
 
             <div className="space-y-2">
               <div className="flex items-center">
@@ -92,12 +111,20 @@ export default function () {
           </div>
 
           <div className="flex-1">
-            <img
-              src="./lo22.png"
-              alt="Professional team working together in the Gulf region"
-              className="w-full h-auto object-contain 
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              animate={isInView1 ? "visible" : "hidden"}
+              transition={{ duration: 1.2, delay: 0.3 }}
+              className="flex-1"
+            >
+              <img
+                src="./lo22.png"
+                alt="Professional team working together in the Gulf region"
+                className="w-full h-auto object-contain 
              max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
-            />
+              />
+            </motion.div>
           </div>
         </div>
 
@@ -112,6 +139,14 @@ export default function () {
 
       <section className=" bg-BgColor-homecolor font-geist">
         <div className="lg:flex lg:p-[8%] py-14">
+        <motion.div
+            ref={ref2}
+            variants={fadeInUp}
+            initial="hidden"
+            animate={isInView2 ? "visible" : "hidden"}
+            transition={{ duration: 1.2 }}
+            className="flex-1"
+          >
           <div className="flex-1">
             <img
               src="./AboutHero22.png"
@@ -119,9 +154,17 @@ export default function () {
               // className="lg:w-full lg:h-auto max-h-[500px]"
               className="w-full h-auto object-contain 
              max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
-            />
+            /> 
           </div>
+          </motion.div>
 
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            animate={isInView2 ? "visible" : "hidden"}
+            transition={{ duration: 1.2, delay: 0.3 }}
+            className="flex-1 py-10 px-6"
+          >
           <div className="flex-1  py-10 px-6">
             <h3 className="text-3xl font-bold text-gray-800  lg:text-gray-900 ">
               Connecting Regional Talent with Gulf Opportunities.
@@ -140,9 +183,11 @@ export default function () {
               </button>
             </Link>
           </div>
+          </motion.div>
         </div>
+        
       </section>
-
+      
 
       <section className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-homecolor">
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
@@ -206,7 +251,12 @@ export default function () {
               From Search to Success — We’ve Got You Covered
             </h3>
             <p className="mt-4 text-gray-900 md:text-lg text-base">
-              Looking to hire top talent or streamline your recruitment process? Our consultancy services are tailored to meet your hiring needs. We partner with companies across industries to deliver customized staffing solutions, saving you time and resources. Whether you're scaling quickly or searching for niche skills, our team is here to support your growth.
+              Looking to hire top talent or streamline your recruitment process?
+              Our consultancy services are tailored to meet your hiring needs.
+              We partner with companies across industries to deliver customized
+              staffing solutions, saving you time and resources. Whether you're
+              scaling quickly or searching for niche skills, our team is here to
+              support your growth.
             </p>
 
             <Link href="/Employers">
@@ -274,7 +324,7 @@ export default function () {
           </div>
 
           <div className="p-10">
-            <div className="flex justify-center items-center mb-4    " >
+            <div className="flex justify-center items-center mb-4    ">
               <img
                 src="./pic2.jpeg"
                 alt="Sample"

@@ -10,10 +10,9 @@ const About = () => {
   return (
     <>
       <Navigation />
-
-
       <div className="bg-BgColor-homecolor min-h-screen w-full lg:px-[8%] lg:py-10 p-5">
-        <div className="lg:flex gap-10 items-center justify-center">
+
+      <div className="lg:flex gap-10 items-center justify-center">
           <div className="flex-1">
 
             <img
@@ -53,7 +52,7 @@ const About = () => {
               </span>
             </p>
           </div>
-        </div>
+      </div>
 
         <section className="bg-BgColor-homecolor lg:mt-[8%]  ">
           <h3 className="text-3xl font-bold text-center mb-6">
