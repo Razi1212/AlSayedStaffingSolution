@@ -1,4 +1,8 @@
 import Link from "next/link";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+
 import {
   FaFacebookF,
   FaYoutube,
@@ -6,9 +10,9 @@ import {
   FaSkype,
   FaLinkedinIn,
 } from "react-icons/fa";
+
 export default function Footer() {
   return (
-    // <div className=" bg-BgColor-darkcolor text-black py-10 px-6 md:px-20 min-h-screen w-full ">
     <div className="  bg-BgColor-NavNewColor text-white py-10 px-6 md:px-20 min-h-screen w-full ">
       <div className="flex flex-wrap justify-between gap-8">
         <div className="max-w-md">
