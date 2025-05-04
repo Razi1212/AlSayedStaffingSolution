@@ -26,7 +26,7 @@ const Jobseekers = () => {
     <>
       <Navigation />
     
-      <div className="bg-BgColor-homecolor  px-6 lg:p-20">
+      <div className="bg-BgColor-testing  px-6 lg:p-20">
         <div className="">
           <h6 className="text-3xl sm:text-4xl font-bold text-center mb-5">
             Find and become a professional with passion
@@ -56,7 +56,7 @@ const Jobseekers = () => {
                 className="pl-10 pr-4 py-2 w-full sm:w-64 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
-            <button className="w-full sm:w-auto bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">
+            <button className="w-full sm:w-auto bg-BgColor-buttonclr text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">
               Submit
             </button>
           </div>
@@ -68,7 +68,10 @@ const Jobseekers = () => {
               <>
                 <li
                   key={Job._id}
-                  className="border p-4 mb-6 rounded-lg shadow-md  bg-white"
+                  className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0]
+ backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl p-6 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group"
+          
+                  // className="border p-4 mb-6 rounded-lg shadow-md  bg-white"
                 >
                   <h2 className="text-xl font-semibold mb-3">{Job.title}</h2>
                   <h2 className="text-xl mb-1 flex items-center gap-2">
@@ -82,7 +85,7 @@ const Jobseekers = () => {
 
                   <div className="flex gap-3 text-center">
                     <Link href={`/Jobseekers/${Job.jobId}`}>
-                      <button className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
+                      <button className="bg-BgColor-buttonclr text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-900 transition">
                         View More
                       </button>
                     </Link>

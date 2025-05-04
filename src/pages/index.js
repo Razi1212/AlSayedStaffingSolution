@@ -37,7 +37,7 @@ export default function () {
       },
     },
   };
-  
+
   return (
     <>
       <Navigations />
@@ -67,67 +67,109 @@ export default function () {
       </div>
 
       <section className="bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] lg:p-[8%] px-5 py-14">
-      <div className="flex flex-col lg:flex-row items-center justify-between space-y-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between space-y-6">
+          <motion.div
+            variants={zoomInRotate}
+            initial="hidden"
+            animate={isInView1 ? "visible" : "hidden"}
+            transition={{ delay: 0.3 }}
+            className="flex-1 space-y-4"
+            ref={ref1} // Attach the ref for Intersection Observer
+          >
+            <motion.h6
+              variants={zoomInRotate}
+              className="text-3xl font-bold text-gray-900"
+            >
+              Career Opportunities Await You in the Gulf – Start Your Journey
+              Now!
+            </motion.h6>
+            <motion.p variants={zoomInRotate} className="text-base">
+              Looking for exciting career opportunities in the Gulf region?
+              Explore a wide range of job openings in the thriving Oil & Gas and
+              Healthcare industries...
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            variants={zoomInRotate}
+            initial="hidden"
+            animate={isInView1 ? "visible" : "hidden"}
+            className="flex-1 space-y-2"
+          >
+            <motion.div variants={zoomInRotate} className="flex items-center">
+              <CountUp
+                from={0}
+                to={50}
+                separator=","
+                direction="up"
+                duration={1}
+                className="text-3xl font-semibold"
+              />
+              <p className="ml-2">Strong Internal team</p>
+            </motion.div>
+
+            <motion.div variants={zoomInRotate} className="flex items-center">
+              <CountUp
+                from={0}
+                to={30}
+                separator=","
+                direction="up"
+                duration={1}
+                className="text-3xl font-semibold"
+              />
+              <p className="ml-2">Recruiters</p>
+            </motion.div>
+
+            <motion.div variants={zoomInRotate} className="flex items-center">
+              <CountUp
+                from={0}
+                to={10}
+                separator=","
+                direction="up"
+                duration={1}
+                className="text-3xl font-semibold"
+              />
+              <p className="ml-2">Admin Supporting Staff</p>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            variants={zoomInRotate}
+            initial="hidden"
+            animate={isInView1 ? "visible" : "hidden"}
+            className="flex-1"
+          >
+            <img
+              src="./lo22.png"
+              alt="Professional team working together in the Gulf region"
+              className="w-full h-auto object-contain max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
+            />
+          </motion.div>
+        </div>
+
         <motion.div
           variants={zoomInRotate}
           initial="hidden"
           animate={isInView1 ? "visible" : "hidden"}
-          transition={{ delay: 0.3 }}
-          className="flex-1 space-y-4"
-          ref={ref1} // Attach the ref for Intersection Observer
+          transition={{ delay: 0.5 }}
+          className="mt-6"
         >
-          <motion.h6 variants={zoomInRotate} className="text-3xl font-bold text-gray-900">
-            Career Opportunities Await You in the Gulf – Start Your Journey Now!
-          </motion.h6>
-          <motion.p variants={zoomInRotate} className="text-base">
-            Looking for exciting career opportunities in the Gulf region? Explore a wide range of job openings in the thriving Oil & Gas and Healthcare industries...
-          </motion.p>
+          <Link href="/Jobseekers">
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "#2563eb",
+                boxShadow: "0px 4px 15px rgba(59, 130, 246, 0.5)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="px-6 py-3 bg-blue-500 text-white rounded-lg"
+            >
+              Find Job
+            </motion.button>
+          </Link>
         </motion.div>
-
-        <motion.div variants={zoomInRotate} initial="hidden" animate={isInView1 ? "visible" : "hidden"} className="flex-1 space-y-2">
-          <motion.div variants={zoomInRotate} className="flex items-center">
-            <CountUp from={0} to={50} separator="," direction="up" duration={1} className="text-3xl font-semibold" />
-            <p className="ml-2">Strong Internal team</p>
-          </motion.div>
-
-          <motion.div variants={zoomInRotate} className="flex items-center">
-            <CountUp from={0} to={30} separator="," direction="up" duration={1} className="text-3xl font-semibold" />
-            <p className="ml-2">Recruiters</p>
-          </motion.div>
-
-          <motion.div variants={zoomInRotate} className="flex items-center">
-            <CountUp from={0} to={10} separator="," direction="up" duration={1} className="text-3xl font-semibold" />
-            <p className="ml-2">Admin Supporting Staff</p>
-          </motion.div>
-        </motion.div>
-
-        <motion.div variants={zoomInRotate} initial="hidden" animate={isInView1 ? "visible" : "hidden"} className="flex-1">
-          <img
-            src="./lo22.png"
-            alt="Professional team working together in the Gulf region"
-            className="w-full h-auto object-contain max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
-          />
-        </motion.div>
-      </div>
-
-      <motion.div variants={zoomInRotate} initial="hidden" animate={isInView1 ? "visible" : "hidden"} transition={{ delay: 0.5 }} className="mt-6">
-        <Link href="/Jobseekers">
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              backgroundColor: "#2563eb",
-              boxShadow: "0px 4px 15px rgba(59, 130, 246, 0.5)",
-            }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg"
-          >
-            Find Job
-          </motion.button>
-        </Link>
-      </motion.div>
-    </section>
-
+      </section>
 
       <section className=" bg-BgColor-homecolor font-geist">
         <div className="lg:flex lg:p-[8%] py-14">
