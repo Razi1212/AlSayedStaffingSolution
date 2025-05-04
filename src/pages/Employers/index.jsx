@@ -239,7 +239,7 @@
 //               variants={fadeInUp}
 //             >
 //           <p className="leading-relaxed mb-6">
-           
+
 //               At <strong>Al Sayed Staffing</strong>, we take pride in delivering top-tier consulting and staffing solutions across diverse industries.
 //               With years of experience and a deep understanding of industry-specific requirements, we bridge the gap between businesses and the
 //               right talent to drive success.
@@ -247,7 +247,7 @@
 //               Our expert team ensures your staffing needs are met with precision and professionalism, enabling seamless operations and enhanced productivity.
 //               Whether you're seeking specialized engineers, healthcare professionals, or skilled construction workers, we have the expertise and network
 //               to provide the right solutions.
- 
+
 //           </p>
 //           </motion.div>
 
@@ -532,7 +532,7 @@ const Industries = () => {
           <motion.div variants={fadeInUp} className="text-black space-y-10">
             {/* Oil & Gas */}
             <div className="w-full lg:flex">
-              <div>
+              <div className="flex-[1.5]">
                 <h6 className="text-lg font-semibold mb-2">Oil & Gas</h6>
                 <p className="text-sm leading-relaxed mb-4">
                   The Oil & Gas industry demands highly skilled and experienced
@@ -541,7 +541,7 @@ const Industries = () => {
                   Sayed Staffing, we provide a wide range of specialists to meet
                   the dynamic needs of this sector.
                 </p>
-                <div>
+                <div >
                   <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
                   <ul className="space-y-2 text-sm">
                     <li>✔️ Brick Mason</li>
@@ -556,25 +556,28 @@ const Industries = () => {
                   </ul>
                 </div>
               </div>
-              <div>
+
+              <div className="flex-[1]">
                 <img
-                  src="./AboutHero2.webp"
+                  src="./Construction.png"
                   alt="Sample"
-                  className="w-full object-cover"
+                  className="w-full h-auto object-contain  hover:rotate-6
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[400px]"
                 />
               </div>
             </div>
 
             {/* Construction */}
             <div className="w-full lg:flex">
-              <div>
+              <div className="flex-[1]">
                 <img
-                  src="./AboutHero2.webp"
+                  src="./EmployerWorking.png"
                   alt="Sample"
-                  className="w-full object-cover"
+                  className="w-full h-auto object-contain 
+                  max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[400px]"
                 />
               </div>
-              <div>
+              <div className="flex-[1.5]">
                 <h6 className="text-lg font-semibold mb-2">Construction</h6>
                 <p className="text-sm leading-relaxed mb-4">
                   The construction industry is the backbone of infrastructure
@@ -602,7 +605,7 @@ const Industries = () => {
 
             {/* Healthcare */}
             <div className="w-full lg:flex">
-              <div>
+              <div className="flex-[1.5]">
                 <h6 className="text-lg font-semibold mb-2">Healthcare</h6>
                 <p className="text-sm leading-relaxed mb-4">
                   Healthcare is a critical industry that requires highly trained
@@ -626,11 +629,12 @@ const Industries = () => {
                   </ul>
                 </div>
               </div>
-              <div>
+              <div className="flex-[1]">
                 <img
-                  src="./AboutHero2.webp"
+                  src="./HealthCare.png"
                   alt="Sample"
-                  className="w-full object-cover"
+                  className="w-full h-auto object-contain 
+                  max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[400px]"
                 />
               </div>
             </div>

@@ -1,29 +1,9 @@
-// import Navigation from "@/pages/Components/Navigations";
-// import Footer from "@/pages/Components/Footer";
-// import { useParams } from 'next/navigation'
-
-// const JobDetails = () => {
-//     const params = useParams();
-
-//     const { id } = params;
-//     return (
-//         <div>
-//             <Navigation />
-//             <h1>Job ID: {id}</h1>
-
-//             <Footer />
-//         </div>
-//     );
-// };
-
-// export default JobDetails;
-
 import Navigation from "@/pages/Components/Navigations";
 import Footer from "@/pages/Components/Footer";
 import Link from "next/link";
 import { MongoClient, ObjectId } from "mongodb";
 import { useState } from "react";
-import { FiMapPin, FiBriefcase, FiCheckCircle , FiUsers } from "react-icons/fi";
+import { FiMapPin, FiBriefcase, FiCheckCircle, FiUsers } from "react-icons/fi";
 
 
 // Job Details Component
@@ -100,63 +80,63 @@ const JobDetails = ({ job }) => {
     return (
         <div>
             <Navigation />
-           
+
 
             <div className="min-h-screen bg-gradient-to-tr from-[#f0f4f8] via-white to-[#e0e7ff] flex items-center justify-center p-6">
-                  <div className="w-full max-w-4xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl p-8 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group">
-            
+                <div className="w-full max-w-4xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl p-8 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group">
+
                     {/* Header */}
                     <div className="mb-8">
-                      <h1 className="text-3xl font-bold text-gray-900 drop-shadow-md mb-3">
-                        {job.title || "Untitled Position"}
-                      </h1>
-                      <div className="flex items-center gap-2 text-gray-600 text-lg">
-                        <FiMapPin className="text-indigo-500" />
-                        <span>{job.location || "Somewhere on Earth 🌍"}</span>
-                      </div>
+                        <h1 className="text-3xl font-bold text-gray-900 drop-shadow-md mb-3">
+                            {job.title || "Untitled Position"}
+                        </h1>
+                        <div className="flex items-center gap-2 text-gray-600 text-lg">
+                            <FiMapPin className="text-indigo-500" />
+                            <span>{job.location || "Somewhere on Earth 🌍"}</span>
+                        </div>
                     </div>
-            
+
                     {/* Industry */}
                     <div className="mb-6 flex items-center gap-3 text-base text-gray-700">
-                      <FiBriefcase className="text-indigo-500" />
-                      <span>
-                        <strong>Industry:</strong> {job.industry || "Not Specified"}
-                      </span>
+                        <FiBriefcase className="text-indigo-500" />
+                        <span>
+                            <strong>Industry:</strong> {job.industry || "Not Specified"}
+                        </span>
                     </div>
-            
+
                     {/* Description */}
                     <section className="mb-8">
-                      <h2 className="text-xl font-semibold text-indigo-600 mb-2">📄 Description</h2>
-                      <p className="whitespace-pre-line leading-5 tracking-wide text-gray-800">
-                        {job.description || "No description available at the moment."}
-                      </p>
+                        <h2 className="text-xl font-semibold text-indigo-600 mb-2">📄 Description</h2>
+                        <p className="whitespace-pre-line leading-5 tracking-wide text-gray-800">
+                            {job.description || "No description available at the moment."}
+                        </p>
                     </section>
-            
+
                     {/* Responsibilities */}
                     <section className="mb-8">
-                      <h2 className="text-xl font-semibold text-indigo-600 mb-2">🎯 Responsibilities</h2>
-                      {(job.responsibilities || "No responsibilities listed.")
-                        .split("\n")
-                        .map((item, index) => (
-                          <div key={index} className="flex items-start gap-2 mb-1">
-                            <FiCheckCircle className="text-green-500 mt-1" />
-                            <span>{item}</span>
-                          </div>
-                        ))}
+                        <h2 className="text-xl font-semibold text-indigo-600 mb-2">🎯 Responsibilities</h2>
+                        {(job.responsibilities || "No responsibilities listed.")
+                            .split("\n")
+                            .map((item, index) => (
+                                <div key={index} className="flex items-start gap-2 mb-1">
+                                    <FiCheckCircle className="text-green-500 mt-1" />
+                                    <span>{item}</span>
+                                </div>
+                            ))}
                     </section>
-            
+
                     {/* Qualifications */}
                     <section className="mb-8">
-                      <h2 className="text-xl font-semibold text-indigo-600 mb-2">🎓 Qualifications</h2>
-                      <p>{job.qualifications || "No qualifications provided."}</p>
+                        <h2 className="text-xl font-semibold text-indigo-600 mb-2">🎓 Qualifications</h2>
+                        <p>{job.qualifications || "No qualifications provided."}</p>
                     </section>
-            
+
                     {/* Benefits */}
                     <section>
-                      <h2 className="text-xl font-semibold text-indigo-600 mb-2">💼 Benefits</h2>
-                      <p className="whitespace-pre-line">{job.benefits || "No benefits mentioned."}</p>
+                        <h2 className="text-xl font-semibold text-indigo-600 mb-2">💼 Benefits</h2>
+                        <p className="whitespace-pre-line">{job.benefits || "No benefits mentioned."}</p>
                     </section>
-                  </div>
+                </div>
             </div>
 
             <div className="bg-slate-300 lg:px-60 lg:py-40  w-full bg-[url('/Apply.jpeg')] bg-cover bg-center">
@@ -392,7 +372,7 @@ const JobDetails = ({ job }) => {
                 </form>
                 </div>
             </div>
-            
+
             <Footer />
 
         </div>
