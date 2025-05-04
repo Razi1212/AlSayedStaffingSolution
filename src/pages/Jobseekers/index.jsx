@@ -22,10 +22,11 @@ const Jobseekers = () => {
     }
     fetchJobs();
   }, []);
+  
   return (
     <>
       <Navigation />
-    
+
       <div className="bg-BgColor-testing  px-6 lg:p-20">
         <div className="">
           <h6 className="text-3xl sm:text-4xl font-bold text-center mb-5">
@@ -70,8 +71,8 @@ const Jobseekers = () => {
                   key={Job._id}
                   className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0]
  backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl p-6 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group"
-          
-                  // className="border p-4 mb-6 rounded-lg shadow-md  bg-white"
+
+                // className="border p-4 mb-6 rounded-lg shadow-md  bg-white"
                 >
                   <h2 className="text-xl font-semibold mb-3">{Job.title}</h2>
                   <h2 className="text-xl mb-1 flex items-center gap-2">
