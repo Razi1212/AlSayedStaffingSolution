@@ -423,7 +423,7 @@ const Industries = () => {
             {[
               {
                 title: "Banking & Finance",
-                img: "./construction.jpg",
+                img: "./Bank.jpg",
                 points: [
                   "Core Banking Application Implementation",
                   "Interface Development",
@@ -433,12 +433,12 @@ const Industries = () => {
               },
               {
                 title: "Consumer Electronics",
-                img: "./construction.jpg",
+                img: "./Automation.jpg",
                 points: ["Networking", "Embedded", "Test Automation", "Firmware Development"],
               },
               {
                 title: "Hi-Tech",
-                img: "./construction.jpg",
+                img: "./ProductEngineering.jpeg",
                 points: ["Product Engineering", "Product Testing (Automated)", "Mobility", "Internet Of Things"],
               },
             ].map((industry, idx) => (
@@ -446,7 +446,8 @@ const Industries = () => {
                 <img
                   src={industry.img}
                   alt={industry.title}
-                  className="w-full object-cover rounded-b-[100px]"
+                  // className="w-full object-cover rounded-b-[100px]"
+                  className="w-[600px] h-[200px] object-cover rounded-b-[100px]"
                 />
                 <div className="p-5">
                   <h6 className="text-lg font-semibold">{industry.title}</h6>
@@ -464,12 +465,12 @@ const Industries = () => {
             {[
               {
                 title: "Healthcare & Life Sciences",
-                img: "./construction.jpg",
+                img: "./DoctorPatient.jpeg",
                 points: ["Customer Application", "Interface of things", "Patient Care (Products & Frameworks)"],
               },
               {
                 title: "Retail & E-commerce",
-                img: "./construction.jpg",
+                img: "./Warehouse.jpeg",
                 points: [
                   "E-commerce Enablement",
                   "Product Catalog Systems/Warehouse Systems",
@@ -478,7 +479,7 @@ const Industries = () => {
               },
               {
                 title: "Automotive and Manufacturing",
-                img: "./construction.jpg",
+                img: "./Software.jpeg",
                 points: [
                   "Customer Development and Maintenance",
                   "Application Migration (Cloud)",
@@ -490,7 +491,7 @@ const Industries = () => {
                 <img
                   src={industry.img}
                   alt={industry.title}
-                  className="w-full object-cover rounded-b-[100px]"
+                  className="w-[600px] h-[200px] object-cover rounded-b-[100px]"
                 />
                 <div className="p-5">
                   <h6 className="text-lg font-semibold">{industry.title}</h6>
