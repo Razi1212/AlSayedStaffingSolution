@@ -15,7 +15,8 @@ const StickySection = ({ children, index }) => {
   return (
     <motion.div
       ref={sectionRef}
-      className="sticky top-0 flex  px-4 py-10  bg-BgColor-ServicesJobseekers lg:px-[8%] lg:py-[5%] md:px-[10%]"
+      ///bg-BgColor-ServicesJobseekers
+      className="sticky top-0 flex  px-4 py-10  bg-gradient-to-r from-gray-100 to-gray-300 bg-BgColor-ServicesJobseekers lg:px-[8%] lg:py-[5%] md:px-[10%]"
     >
       {/* <div className=" w-full  shadow-lg rounded-xl bg-yellow-200 p-0 m-0">hjhj */}
       {children}
@@ -29,7 +30,7 @@ export default function SidebarTabs() {
     <>
       <Navigation />
       <div >
-        <div className="px-4 py-10 bg-BgColor-ServicesJobseekers  lg:px-[8%] lg:py-[5%] md:px-[10%]">
+        <div className="px-4 py-10  bg-gradient-to-r from-gray-100  lg:px-[8%] lg:py-[5%] md:px-[10%]">
           <div className="lg:flex gap-10 items-center justify-center">
             <div className="flex-1">
 
