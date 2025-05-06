@@ -530,7 +530,7 @@ const StickySection = ({ children, index }) => {
       className="sticky top-0 flex  px-4 py-10  bg-gradient-to-r from-gray-100 to-gray-300 lg:px-[8%] lg:py-[5%] md:px-[10%]"
     >
       {/* <div className=" w-full  shadow-lg rounded-xl bg-yellow-200 p-0 m-0">hjhj */}
-        {children}
+      {children}
       {/* </div> */}
     </motion.div>
   );
@@ -591,7 +591,7 @@ export default function JobSeekers() {
             </div>
             <div className=''>
               <img
-                src="/pics.jpg"
+                src="/Jobsearch.jpeg"
                 alt="Sample"
                 className="w-full h-auto object-contain 
                  max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
@@ -602,16 +602,8 @@ export default function JobSeekers() {
 
         <StickySection index={1}>
           <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
-            <div>
 
-              <img
-                src="/pics2.jpeg"
-                alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px]"
-              />
-            </div>
-            <div>
+            <div className='flex-1'>
               <h4 className="text-xl font-medium mb-2">Resume Modification</h4>
               <p className="text-gray-700 mb-4">
                 A well-structured resume is key to making a strong impression on
@@ -640,12 +632,22 @@ export default function JobSeekers() {
                 </li>
               </ul>
             </div>
+
+            <div>
+
+              <img
+                src="/Resume.jpeg"
+                alt="Sample"
+                className="w-full h-auto object-contain 
+                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+              />
+            </div>
           </div>
         </StickySection>
 
         <StickySection index={2}>
           <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
-            <div>
+            <div className='flex-1'>
               <h4 className="text-xl font-medium mb-2">Interview Coaching</h4>
               <p className="text-gray-700 mb-4">
                 Confidence and preparation are key to acing job interviews. Our
@@ -677,10 +679,10 @@ export default function JobSeekers() {
             <div>
 
               <img
-                src="/pics3.jpeg"
+                src="/Friends.jpeg"
                 alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px]"
+                  className="w-full h-auto object-contain 
+                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
               />
 
             </div>

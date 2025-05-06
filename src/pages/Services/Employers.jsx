@@ -59,7 +59,8 @@ export default function SidebarTabs() {
 
 
         <StickySection index={0} >
-          <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl" >
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur
+          w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl" >
             <div className='flex-1'>
               <h4 className="text-xl font-medium mb-2">Pre Souring</h4>
               <p className="text-gray-700 mb-4">
