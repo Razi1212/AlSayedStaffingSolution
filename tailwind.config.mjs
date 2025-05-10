@@ -26,7 +26,8 @@ export default {
 				NavNewColor:'rgb(11,20,63)',
 				ServicesJobseekers:'rgb(200,223,207)',
 				testing:'rgb(244, 246, 249)',
-				buttonclr:'rgb(28, 79, 86)'
+				buttonclr:'rgb(28, 79, 86)',
+				card:'rgb(229, 232, 235)'
 
 				
   			},

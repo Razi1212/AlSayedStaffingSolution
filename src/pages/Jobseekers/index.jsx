@@ -33,9 +33,9 @@ const Jobseekers = () => {
     <>
       <Navigation />
 
-      <div className="bg-BgColor-homecolor px-6 lg:p-20 min-h-screen">
+      <div className="bg-BgColor-testing  px-6  py-6 lg:p-20 min-h-screen ">
         <div>
-          <h6 className="text-3xl sm:text-4xl font-bold text-center mb-5">
+          <h6 className="text-3xl sm:text-4xl font-bold text-center mb-5 ">
             Find and become a professional with passion
           </h6>
           <p className="text-center text-lg sm:text-xl mb-10 px-2">
@@ -83,9 +83,10 @@ const Jobseekers = () => {
                 </div>
               ) : (
                 Jobs.map((Job) => (
+
                   <li
                     key={Job._id}
-                    className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0]
+                    className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0]  via-white to-[#e2e8f0]
  backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl p-6 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group"
 
                   >
