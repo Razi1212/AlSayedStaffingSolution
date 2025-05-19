@@ -21,7 +21,8 @@ const About = () => {
   return (
     <>
       <Navigation />
-      <div className="bg-BgColor-homecolor min-h-screen w-full lg:px-[8%] lg:py-10 p-5">
+      {/* bg-BgColor-homecolor */}
+      <div className="bg-gradient-to-tr from-[#f0f4f8] via-white to-[#e0e7ff] min-h-screen w-full lg:px-[8%] lg:py-10 p-5">
 
         <div className="lg:flex gap-10 items-center justify-center">
           <motion.div
