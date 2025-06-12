@@ -104,7 +104,7 @@ const JobDetails = ({ job }) => {
 
     return (
 
-        <div>
+        <div  className="">
             <Navigation />
 
 
