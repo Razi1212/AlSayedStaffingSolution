@@ -76,12 +76,13 @@ export default function JobSeekers() {
 
               </ul>
             </div>
-            <div className=''>
+            <div className="w-[250px] h-[250px] overflow-hidden rounded-2xl shadow-md">
               <img
-                src="/Jobsearch.jpeg"
+                src="/Jobsearch.jpeg"strong
                 alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+                // className="w-full h-auto object-contain 
+                //  max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+                    className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -120,13 +121,14 @@ export default function JobSeekers() {
               </ul>
             </div>
 
-            <div>
+           <div className="w-[250px] h-[250px] overflow-hidden rounded-2xl shadow-md">
 
               <img
                 src="/Resume.jpeg"
                 alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+                // className="w-full h-auto object-contain 
+                //  max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+                    className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -163,13 +165,15 @@ export default function JobSeekers() {
             </div>
 
 
-            <div>
+           <div className="w-[250px] h-[250px] overflow-hidden rounded-2xl shadow-md">
 
               <img
-                src="/Friends.jpeg"
+                src="/friends3.jpeg"
                 alt="Sample"
-                  className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+          // className="w-full h-auto object-contain 
+          //        max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+            className="w-full h-full object-cover"
+                 
               />
 
             </div>
@@ -202,13 +206,14 @@ export default function JobSeekers() {
             </div>
 
 
-            <div>
+            <div className="w-[250px] h-[250px] overflow-hidden rounded-2xl shadow-md">
 
               <img
                 src="/pics4.jpeg"
                 alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px]"
+              // className="w-full h-auto object-contain 
+              //    max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+                className="w-full h-full object-cover"
               />
 
             </div>
@@ -239,14 +244,15 @@ export default function JobSeekers() {
               </ul>
             </div>
 
-            <div>
+            <div className="w-[250px] h-[250px] overflow-hidden rounded-2xl shadow-md">
 
 
               <img
                 src="/pics6.jpeg"
                 alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px]"
+                //   className="w-full h-auto object-contain 
+                //  max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+                 className="w-full h-full object-cover"
               />
 
             </div>
@@ -278,14 +284,15 @@ export default function JobSeekers() {
               </ul>
             </div>
 
-            <div>
+           <div className="w-[250px] h-[250px] overflow-hidden rounded-2xl shadow-md">
 
 
               <img
                 src="/pics5.jpeg"
                 alt="Sample"
-                className="w-full h-auto object-contain 
-                 max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px]"
+            // className="w-full h-auto object-contain 
+            //      max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[200px] xl:max-h-[350px] rounded-2xl"
+             className="w-full h-full object-cover"
               />
 
             </div>
