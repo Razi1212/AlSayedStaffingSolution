@@ -27,6 +27,13 @@ export default {
           testing: "rgb(244, 246, 249)",
           buttonclr: "rgb(28, 79, 86)",
           card: "rgb(229, 232, 235)",
+          
+          accent:"rgb(245, 166, 35)",
+          Backgroundlight : 'rgb(249, 250, 251)',
+          Primaryclr:'rgb(10, 34, 57)',
+          Secondaryclr:'rgb(18, 93, 152)',
+          TextPrimary : 'rgb(51, 51, 51)',
+          TextSecondary : 'rgb(255, 255, 255)'
         },
 
        
