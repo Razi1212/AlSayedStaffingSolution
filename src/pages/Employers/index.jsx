@@ -288,10 +288,11 @@ const Industries = () => {
   return (
     <>
       <Navigation />
-      <div className="bg-BgColor-testing lg:px-[5%] lg:py-10 p-5 space-y-16">
+             <div className="w-full bg-white">
+      <div className="bg-BgColor-testing min-h-screen w-full lg:max-w-[1400px] mx-auto lg:px-[5%] lg:py-10 p-5 space-y-16">
         {/* Intro Section */}
         <MotionSection>
-          <motion.p variants={fadeInUp} className="leading-relaxed mb-6">
+          <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-lg">
             At <strong>Al Sayed Staffing</strong>, we take pride in delivering
             top-tier consulting and staffing solutions across diverse industries.
             With years of experience and a deep understanding of
@@ -300,7 +301,7 @@ const Industries = () => {
 
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="leading-relaxed mb-6">
+          <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-lg">
             Our expert team ensures your staffing needs are met with precision
             and professionalism, enabling seamless operations and enhanced
             productivity. Whether you're seeking specialized engineers,
@@ -317,8 +318,8 @@ const Industries = () => {
         {/* Oil & Gas */}
         <MotionSection className="w-full lg:flex items-center gap-6">
           <motion.div variants={fadeInUp} className="flex-[1.5]">
-            <h6 className="text-lg font-semibold mb-2">Oil & Gas</h6>
-            <p className="text-sm leading-relaxed mb-4">
+            <h6 className="text-gray-900 text-3xl font-bold mb-2">Oil & Gas</h6>
+            <p className="text-gray-900 text-lg leading-relaxed mb-4">
               The Oil & Gas industry demands highly skilled and experienced
               professionals to handle complex projects, ensure safety, and
               maintain efficiency in a challenging work environment. At Al
@@ -326,7 +327,7 @@ const Industries = () => {
               the dynamic needs of this sector.
             </p>
             <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-gray-900 text-lg">
               <li>✔️ Brick Mason</li>
               <li>✔️ Ceramic Carver</li>
               <li>✔️ Mosaic Fitter</li>
@@ -343,7 +344,9 @@ const Industries = () => {
             <img
               src="./Construction.png"
               alt="Oil & Gas"
-              className="w-full h-auto object-contain max-h-[400px]"
+              // className="w-full h-auto object-contain max-h-[400px]"
+                className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]"
             />
           </motion.div>
         </MotionSection>
@@ -354,12 +357,14 @@ const Industries = () => {
             <img
               src="./EmployerWorking.png"
               alt="Construction"
-              className="w-full h-auto object-contain max-h-[400px]"
+              // className="w-full h-auto object-contain max-h-[400px]"
+                className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]"
             />
           </motion.div>
           <motion.div variants={fadeInUp} className="flex-[1.5]">
-            <h6 className="text-lg font-semibold mb-2">Construction</h6>
-            <p className="text-sm leading-relaxed mb-4">
+            <h6 className="text-gray-900 text-3xl font-bold mb-2">Construction</h6>
+            <p className="text-gray-900 text-lg leading-relaxed mb-4">
               The construction industry is the backbone of infrastructure
               development. It requires a workforce with technical skills,
               physical strength, and a strong understanding of building codes
@@ -367,7 +372,7 @@ const Industries = () => {
               can work under pressure.
             </p>
             <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-gray-900 text-lg">
               <li>✔️ Brick Mason</li>
               <li>✔️ Ceramic Carver</li>
               <li>✔️ Mosaic Fitter</li>
@@ -384,8 +389,8 @@ const Industries = () => {
         {/* Healthcare */}
         <MotionSection className="w-full lg:flex items-center gap-6">
           <motion.div variants={fadeInUp} className="flex-[1.5]">
-            <h6 className="text-lg font-semibold mb-2">Healthcare</h6>
-            <p className="text-sm leading-relaxed mb-4">
+            <h6 className="text-gray-900 text-3xl font-bold mb-2">Healthcare</h6>
+            <p className="text-lg leading-relaxed mb-4">
               Healthcare is a critical industry that requires highly trained
               and compassionate professionals to provide quality patient care.
               We understand the unique demands of the healthcare sector and
@@ -393,7 +398,7 @@ const Industries = () => {
               specialized doctors to support staff.
             </p>
             <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-lg">
               <li>✔️ Brick Mason</li>
               <li>✔️ Ceramic Carver</li>
               <li>✔️ Mosaic Fitter</li>
@@ -410,7 +415,9 @@ const Industries = () => {
             <img
               src="./HealthCare.png"
               alt="Healthcare"
-              className="w-full h-auto object-contain max-h-[400px]"
+              // className="w-full h-auto object-contain max-h-[400px]"
+                className="w-full h-auto object-contain 
+             max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]"
             />
           </motion.div>
         </MotionSection>
@@ -505,6 +512,8 @@ const Industries = () => {
             ))}
           </div>
         </MotionSection>
+
+      </div>
 
       </div>
       <Footer />

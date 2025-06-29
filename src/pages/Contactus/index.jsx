@@ -49,7 +49,7 @@ const Contactus = () => {
             Let’s Chat, Reach Out to Us for any Query.
           </h3>
           <p className="mb-10">
-            Have questions or feedback? We 're here to help. Send us a message,
+            Have questions or feedback? We're here to help. Send us a message,
             and we'll respond within 24 hours
           </p>
 

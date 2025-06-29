@@ -63,7 +63,7 @@ export default function Navigation() {
         <NavigationMenuItem>
           <Link href="/Employers" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Employeers
+              Employers
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
