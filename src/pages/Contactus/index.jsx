@@ -43,7 +43,8 @@ const Contactus = () => {
       <Navigation />
       {/* ////bg-gradient-to-r from-slate-300 to-slate-500 */}
       <div className=" bg-BgColor-testing min-h-screen w-full lg:px-[8%]  lg:py-10 p-5 ">
-        <div className=" lg:flex gap-10">
+        {/* //lg:flex gap-10 */}
+        <div className=" flex flex-col gap-5 lg:flex-row lg:gap-10 ">
           <div className="w-full flex-1 bg-BgColor-contactcolor  rounded-2xl p-11 shadow-2xl">
             <p className="mb-5 text-xl font-semibold">Get In Touch!</p>
             <h3 className="text-3xl font-semibold mb-6">
@@ -114,7 +115,7 @@ const Contactus = () => {
             {status && <p className="mt-3 text-center">{status}</p>}
           </div>
 
-          <div className="min-h-screen w-full flex-1 bg-gray-100 rounded-2xl shadow-2xl text-base">
+          <div className="min-h-screen w-full flex-1  bg-BgColor-contactcolor rounded-2xl shadow-2xl text-base">
             <img
               src="./contact-img22.jpeg"
               alt="Sample"

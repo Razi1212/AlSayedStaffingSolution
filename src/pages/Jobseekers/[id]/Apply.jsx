@@ -1,8 +1,7 @@
-
 import Navigation from "@/pages/Components/Navigations";
 import Footer from "@/pages/Components/Footer";
 import { useState } from "react";
-
+import Swal from "sweetalert2";
 const JobDetails = ({ job }) => {
 
   const [file, setFile] = useState([]);
@@ -49,38 +48,40 @@ const JobDetails = ({ job }) => {
     formDetails.append('file', file);
     formDetails.append('formData', JSON.stringify(formData));
 
-    const res = await fetch('/api/applyJob', {
-      method: 'POST',
-      body: formDetails,
-    });
-
-    const data = await res.json();
-
-    if (res.ok) {
-      Swal.fire({
-        title: "Success",
-        text: `File uploaded: ${data.fileName}`,
-        icon: "success"
+    try {
+      const res = await fetch('/api/applyJob', {
+        method: 'POST',
+        body: formDetails,
       });
-    } else {
 
+      const data = await res.json();
+
+      if (res.ok) {
+        Swal.fire({
+          title: "Success",
+          text: `File uploaded: ${data.fileName}`,
+          icon: "success"
+        });
+        console.log("Form Data Submitted:", formData);
+      } else {
+        Swal.fire({
+          title: 'Error!',
+          text: `Error: ${data.error}`,
+          icon: 'error',
+          confirmButtonColor: '#d33',  // Red color for error confirmation
+          confirmButtonText: 'OK'
+        });
+        console.log("error", data.error);
+      }
+    } catch (error) {
       Swal.fire({
-        title: 'Error!',
-        text: `Error: ${data.error}`,
+        title: 'Unexpected Error!',
+        text: error.message || 'Something went wrong during submission.',
         icon: 'error',
-        confirmButtonColor: '#d33',  // Red color for error confirmation
-        confirmButtonText: 'OK'
+        confirmButtonColor: '#d33'
       });
-      console.log("error", data.error)
+      console.error("Unexpected Exception:", error);
     }
-    console.log("Form Data Submitted:", formData);
-    Swal.fire({
-      title: "Success",
-      text: "Form submitted successfully",
-      icon: "success"
-    });
-
-
   };
 
 
@@ -331,5 +332,3 @@ const JobDetails = ({ job }) => {
 };
 
 export default JobDetails;
-
-

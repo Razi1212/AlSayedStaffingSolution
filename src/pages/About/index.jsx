@@ -194,7 +194,7 @@ const About = () => {
           <div className="lg:flex gap-10 items-center justify-center">
             <motion.div
               ref={ref1}
-              variants={fadeSlideUp} // 👈 new variant if you updated
+              variants={fadeSlideUp} 
               initial="hidden"
               animate={isInView1 ? "visible" : "hidden"}
               className="flex-1 space-y-4"
@@ -267,7 +267,7 @@ const About = () => {
               </p>
 
               <motion.div
-                className="p-6 lg:p-20 rounded-xl lg:flex lg:gap-10 space-y-6 lg:space-y-0 bg-BgColor-Services shadow-lg"
+                className="p-6 lg:p-20 rounded-xl lg:flex lg:gap-10 space-y-6 lg:space-y-0 bg-BgColor-contactcolor shadow-lg"
                 variants={containerStagger}
                 initial="hidden"
                 animate={isInView2 ? "visible" : "hidden"}
