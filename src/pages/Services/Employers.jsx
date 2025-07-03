@@ -16,7 +16,7 @@ const StickySection = ({ children, index }) => {
     <motion.div
       ref={sectionRef}
       ///bg-BgColor-ServicesJobseekers
-      className="sticky top-0 flex  px-4 py-10  bg-gradient-to-r from-gray-100 to-gray-300 bg-BgColor-ServicesJobseekers lg:px-[8%] lg:py-[5%] md:px-[10%]"
+      className="sticky top-0 flex  px-4 py-10  bg-BgColor-testing lg:px-[8%] lg:py-[5%] md:px-[10%]"
     >
       {/* <div className=" w-full  shadow-lg rounded-xl bg-yellow-200 p-0 m-0">hjhj */}
       {children}
@@ -30,7 +30,8 @@ export default function SidebarTabs() {
     <>
       <Navigation />
       <div >
-        <div className="px-4 py-10  bg-gradient-to-r from-gray-100  lg:px-[8%] lg:py-[5%] md:px-[10%]">
+        {/* bg-gradient-to-r from-gray-100 */}
+        <div className="px-4 py-10 bg-BgColor-testing    lg:px-[8%] lg:py-[5%] md:px-[10%]">
           <div className="lg:flex gap-10 items-center justify-center">
             <div className="flex-1">
 
@@ -104,7 +105,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={1}>
-          <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
 
               <img
@@ -147,7 +148,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={2}>
-          <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
               <h4 className="text-xl font-medium mb-2">Recruitment Drives</h4>
               <p className="text-gray-700 mb-4">
@@ -193,7 +194,7 @@ export default function SidebarTabs() {
 
 
         <StickySection index={3}>
-          <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
 
               <img
@@ -236,7 +237,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={4}>
-          <div className="bg-gradient-to-r from-rose-100 to-teal-100 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
               <h4 className="text-xl font-medium mb-2">Skill Test</h4>
               <p className="text-gray-700 mb-4">
@@ -281,7 +282,7 @@ export default function SidebarTabs() {
         </StickySection>
 
         <StickySection index={5}>
-          <div className="bg-gradient-to-r from-red-200 to-yellow-200 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
 
               <img

@@ -292,7 +292,7 @@ const Industries = () => {
       <div className="bg-BgColor-testing min-h-screen w-full lg:max-w-[1400px] mx-auto lg:px-[5%] lg:py-10 p-5 space-y-16">
         {/* Intro Section */}
         <MotionSection>
-          <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-lg">
+          <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-base">
             At <strong>Al Sayed Staffing</strong>, we take pride in delivering
             top-tier consulting and staffing solutions across diverse industries.
             With years of experience and a deep understanding of
@@ -301,7 +301,7 @@ const Industries = () => {
 
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-lg">
+          <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-base">
             Our expert team ensures your staffing needs are met with precision
             and professionalism, enabling seamless operations and enhanced
             productivity. Whether you're seeking specialized engineers,
@@ -319,7 +319,7 @@ const Industries = () => {
         <MotionSection className="w-full lg:flex items-center gap-6">
           <motion.div variants={fadeInUp} className="flex-[1.5]">
             <h6 className="text-gray-900 text-3xl font-bold mb-2">Oil & Gas</h6>
-            <p className="text-gray-900 text-lg leading-relaxed mb-4">
+            <p className="text-gray-900 text-base leading-relaxed mb-4">
               The Oil & Gas industry demands highly skilled and experienced
               professionals to handle complex projects, ensure safety, and
               maintain efficiency in a challenging work environment. At Al
@@ -327,7 +327,7 @@ const Industries = () => {
               the dynamic needs of this sector.
             </p>
             <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
-            <ul className="space-y-2 text-gray-900 text-lg">
+            <ul className="space-y-2 text-gray-900 text-base">
               <li>✔️ Brick Mason</li>
               <li>✔️ Ceramic Carver</li>
               <li>✔️ Mosaic Fitter</li>
@@ -364,7 +364,7 @@ const Industries = () => {
           </motion.div>
           <motion.div variants={fadeInUp} className="flex-[1.5]">
             <h6 className="text-gray-900 text-3xl font-bold mb-2">Construction</h6>
-            <p className="text-gray-900 text-lg leading-relaxed mb-4">
+            <p className="text-gray-900 text-base leading-relaxed mb-4">
               The construction industry is the backbone of infrastructure
               development. It requires a workforce with technical skills,
               physical strength, and a strong understanding of building codes
@@ -372,7 +372,7 @@ const Industries = () => {
               can work under pressure.
             </p>
             <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
-            <ul className="space-y-2 text-gray-900 text-lg">
+            <ul className="space-y-2 text-gray-900 text-base">
               <li>✔️ Brick Mason</li>
               <li>✔️ Ceramic Carver</li>
               <li>✔️ Mosaic Fitter</li>
@@ -390,7 +390,7 @@ const Industries = () => {
         <MotionSection className="w-full lg:flex items-center gap-6">
           <motion.div variants={fadeInUp} className="flex-[1.5]">
             <h6 className="text-gray-900 text-3xl font-bold mb-2">Healthcare</h6>
-            <p className="text-lg leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4">
               Healthcare is a critical industry that requires highly trained
               and compassionate professionals to provide quality patient care.
               We understand the unique demands of the healthcare sector and
@@ -398,7 +398,7 @@ const Industries = () => {
               specialized doctors to support staff.
             </p>
             <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
-            <ul className="space-y-2 text-lg">
+            <ul className="space-y-2 text-base">
               <li>✔️ Brick Mason</li>
               <li>✔️ Ceramic Carver</li>
               <li>✔️ Mosaic Fitter</li>
@@ -424,9 +424,9 @@ const Industries = () => {
 
         {/* Other Industries */}
         <MotionSection>
-          <motion.p variants={fadeInUp}>Other industries we support:</motion.p>
+          <motion.p variants={fadeInUp} className="font-semibold">Other industries we support:</motion.p>
 
-          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:flex lg:justify-normal lg:gap-20 lg:m-9 ">
+          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:flex lg:justify-normal lg:gap-20 lg:m-9 text-base">
             {[
               {
                 title: "Banking & Finance",
@@ -468,7 +468,7 @@ const Industries = () => {
             ))}
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:flex lg:justify-normal lg:gap-20 lg:m-9">
+          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:flex lg:justify-normal lg:gap-20 lg:m-9 text-base">
             {[
               {
                 title: "Healthcare & Life Sciences",
@@ -494,7 +494,7 @@ const Industries = () => {
                 ],
               },
             ].map((industry, idx) => (
-              <motion.div key={idx} variants={fadeInUp} className="bg-gradient-to-tr from-[#f0f4f8] via-white to-[#e0e7ff] rounded-lg  shadow-2xl">
+              <motion.div key={idx} variants={fadeInUp} className="bg-gradient-to-tr from-[#f0f4f8] via-white to-[#e0e7ff] rounded-lg  shadow-2xl ">
                 <img
                   src={industry.img}
                   alt={industry.title}

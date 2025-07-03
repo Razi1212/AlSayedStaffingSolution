@@ -14,7 +14,7 @@ const StickySection = ({ children, index }) => {
   return (
     <motion.div
       ref={sectionRef}
-      className="sticky top-0 flex  px-4 py-10  bg-gradient-to-r from-gray-100 to-gray-300 lg:px-[8%] lg:py-[5%] md:px-[10%]"
+      className="sticky top-0 flex  px-4 py-10  bg-BgColor-testing lg:px-[8%] lg:py-[5%] md:px-[10%]"
     >
       {/* <div className=" w-full  shadow-lg rounded-xl bg-yellow-200 p-0 m-0">hjhj */}
       {children}
@@ -28,7 +28,7 @@ export default function JobSeekers() {
     <>
       <Navigation />
       <div >
-        <div className="px-4 py-10  bg-gradient-to-r from-gray-100 to-gray-300 lg:px-[8%] lg:py-[5%] md:px-[10%]">
+        <div className="px-4 py-10  bg-BgColor-testing lg:px-[8%] lg:py-[5%] md:px-[10%]">
           <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">
             Empowering Employers with Tailored Talent Solutions
           </h1>
@@ -44,7 +44,7 @@ export default function JobSeekers() {
 
 
         <StickySection index={0} >
-          <div className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0] backdrop-blur-xl border border-white/40  w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl" >
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur-xl border border-white/40  w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl" >
             <div className='flex-1'>
               <h4 className="text-xl font-medium mb-2">Job Search Assistance</h4>
               <p className="text-gray-700 mb-4">
@@ -89,7 +89,7 @@ export default function JobSeekers() {
         </StickySection>
 
         <StickySection index={1}>
-          <div className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0] backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
 
             <div className='flex-1'>
               <h4 className="text-xl font-medium mb-2">Resume Modification</h4>
@@ -135,7 +135,7 @@ export default function JobSeekers() {
         </StickySection>
 
         <StickySection index={2}>
-          <div className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0] backdrop-blur-xl0 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur-xl0 w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div className='flex-1'>
               <h4 className="text-xl font-medium mb-2">Interview Coaching</h4>
               <p className="text-gray-700 mb-4">
@@ -182,7 +182,7 @@ export default function JobSeekers() {
         </StickySection>
 
         <StickySection index={3}>
-          <div className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0] backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
               <h4 className="text-xl font-medium mb-2">Documents Attestation</h4>
               <p className="text-gray-700 mb-4">
@@ -222,7 +222,7 @@ export default function JobSeekers() {
         </StickySection>
 
         <StickySection index={4}>
-          <div className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0] backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5  rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5  rounded-3xl gap-16 shadow-2xl">
             <div>
               <h4 className="text-xl font-medium mb-2">Visa Processing Assistance</h4>
               <p className="text-gray-700 mb-4">
@@ -262,7 +262,7 @@ export default function JobSeekers() {
 
 
         <StickySection index={5}>
-          <div className="bg-gradient-to-tr from-[#f1f5f9] via-white to-[#e2e8f0] backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
+          <div className="bg-gradient-to-b from-white/70 to-white/90 backdrop-blur-xl w-full lg:flex lg:p-10 md:10 p-5 rounded-3xl gap-16 shadow-2xl">
             <div>
               <h4 className="text-xl font-medium mb-2">Pre departure Guidance</h4>
               <p className="text-gray-700 mb-4">
