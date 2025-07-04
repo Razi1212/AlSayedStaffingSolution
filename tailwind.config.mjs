@@ -26,10 +26,9 @@ export default {
           NavNewColor: "rgb(11,20,63)",
           ServicesJobseekers: "rgb(200,223,207)",
           // testing: "rgb(244, 246, 249)",
-           testing:"rgb(245,245,247)",
+           testing:"rgb(235, 238, 245)", 
           buttonclr: "rgb(28, 79, 86)",
           card: "rgb(229, 232, 235)",
-          
           accent:"rgb(245, 166, 35)",
           Backgroundlight : 'rgb(249, 250, 251)',
           Primaryclr:'rgb(10, 34, 57)',

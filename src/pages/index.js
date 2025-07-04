@@ -132,7 +132,7 @@ export default function () {
         </div>
       </section>
 
-      <section className="bg-BgColor-homecolor lg:p-[8%] px-5 py-14">
+      <section className="bg-BgColor-testing  lg:p-[8%] px-5 py-14">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-6">
           <motion.div
             variants={zoomInRotate}
@@ -237,7 +237,7 @@ export default function () {
         </motion.div>
       </section>
 
-      <section className=" bg-BgColor-homecolor font-white py-14">
+      <section className=" bg-BgColor-testing  font-white py-14">
         <div className="lg:flex lg:p-[8%] ">
           <div className="flex-1">
             <motion.div
@@ -303,7 +303,7 @@ export default function () {
         </div>
       </section>
 
-      <section className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-homecolor">
+      <section className="bg-cover bg-center bg-no-repeat py-16 px-8  flex items-center justify-center bg-BgColor-testing">
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
           {/* Left Content */}
           <div className="text-center md:text-left max-w-2xl">

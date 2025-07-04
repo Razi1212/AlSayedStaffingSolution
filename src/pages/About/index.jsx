@@ -188,8 +188,8 @@ const About = () => {
   return (
     <>
       <Navigation />
-      <div className="w-full bg-BgColor-Backgroundlight">
-        <div className="bg-BgColor-Backgroundlight min-h-screen w-full lg:max-w-[1400px] mx-auto lg:px-[8%] lg:py-10 p-5">
+      <div className="w-full bg-BgColor-testing">
+        <div className="bg-BgColor-testing min-h-screen w-full lg:max-w-[1400px] mx-auto lg:px-[8%] lg:py-10 p-5">
           {/* Hero Section */}
           <div className="lg:flex gap-10 items-center justify-center">
             <motion.div
@@ -248,7 +248,7 @@ const About = () => {
             </motion.div>
           </div>
 
-          <section className="bg-BgColor-Backgroundlight lg:mt-[8%]">
+          <section className="bg-BgColor-testing  lg:mt-[8%]">
             <motion.div
               ref={ref2}
               variants={fadeSlideUp}
