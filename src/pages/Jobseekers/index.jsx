@@ -106,7 +106,7 @@ const Jobseekers = () => {
                 filteredJobs.map((Job) => (
                   <li
                     key={Job._id}
-                    className=" bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl p-6 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group"
+                    className=" bg-BgColor-contactcolor rounded-2xl p-6 sm:p-12 text-gray-800 transition-all duration-300 hover:shadow-[0_10px_60px_rgba(99,102,241,0.25)] hover:border-indigo-400 group"
                   >
                     <h2 className="text-xl font-semibold mb-3">{Job.title}</h2>
                     <h2 className="text-xl mb-1 flex items-center gap-2">

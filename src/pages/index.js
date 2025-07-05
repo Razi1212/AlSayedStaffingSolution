@@ -369,7 +369,7 @@ export default function () {
         </div>
       </section>
 
-      <section className="lg:p-[8%] px-8  py-16">
+      <section className="lg:p-[8%] px-8  py-16 bg-BgColor-contactcolor">
         <h6 className="text-xl font-semibold text-gray-800">
           Insights from the People We've Placed
         </h6>
