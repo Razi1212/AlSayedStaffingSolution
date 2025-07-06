@@ -4,6 +4,12 @@ import CountUp from "./Countup";
 import Footer from "./Components/Footer";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function () {
   const ref1 = useRef(null);
@@ -66,7 +72,6 @@ export default function () {
         </div>
       </div>
 
-    
       <section className=" bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] font-geist">
         <div className="lg:flex lg:p-[8%] py-14">
           <motion.div
@@ -156,7 +161,7 @@ export default function () {
             </motion.p>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             variants={zoomInRotate}
             initial="hidden"
             animate={isInView1 ? "visible" : "hidden"}
@@ -197,7 +202,7 @@ export default function () {
               />
               <p className="ml-2">Admin Supporting Staff</p>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             variants={zoomInRotate}
@@ -369,84 +374,104 @@ export default function () {
         </div>
       </section>
 
-      <section className="lg:p-[8%] px-8  py-16 bg-BgColor-contactcolor">
-        <h6 className="text-xl font-semibold text-gray-800">
-          Insights from the People We've Placed
-        </h6>
-        <br />
-        <span className="text-base text-gray-600">
-          Hear from individuals who trusted us with their careers. Their stories
-          reflect the value, guidance, and impact our consulting services
-          deliver every day.
-        </span>
+     
 
-        <div className="lg:flex">
-          <div className="p-10 ">
-            <div className="flex justify-center items-center mb-4">
-              <img
-                src="./pic2.jpeg"
-                alt="Sample"
-                className="w-40 h-40 object-cover rounded-full border-4 border-rose-400"
-              />
-            </div>
+      <section className="relative bg-[#f3f6fb] py-16 px-8 overflow-hidden">
+  {/* Subtle texture overlay */}
+  <div className="absolute inset-0 bg-[url('/topography.svg')] bg-repeat opacity-10 pointer-events-none" />
 
-            <h3 className="bg-rose-400 text-white  p-4 text-center rounded-2xl">
-              Abdullah
-            </h3>
-            <h3 className="text-rose-400 p-4">
-              Designation : Software Developer
-            </h3>
-            <div className="border-2  border-rose-400 p-10 rounded-md">
-              <p>
-                The team understood my career goals and matched me with a role
-                that truly fits. Highly recommend their services
-              </p>
-            </div>
-          </div>
+  {/* Content container */}
+  <div className="relative z-10 max-w-5xl mx-auto space-y-12">
+    {/* Intro block */}
+    <div className="p-6 text-black rounded-md bg-white/80 backdrop-blur">
+      <p className="mb-4">
+        At <strong>Al Sayeed Staffing Solutions</strong>, we believe recruitment is more than filling a position — it’s about building lasting relationships and empowering growth for both employers and job seekers.
+      </p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>🔒 <strong>Integrity First:</strong> Transparent and ethical recruitment standards.</li>
+        <li>🕒 <strong>Time-Saving Processes:</strong> We handle the heavy lifting so you can focus on your business.</li>
+        <li>🌟 <strong>Quality Over Quantity:</strong> Every candidate is vetted for skills, attitude, and fit.</li>
+      </ul>
+    </div>
 
-          <div className="p-10">
-            <div className="flex justify-center items-center mb-4">
-              <img
-                src="./pic2.jpeg"
-                alt="Sample"
-                className="w-40 h-40 object-cover rounded-full border-4  border-teal-900 "
-              />
-            </div>
-            <h3 className="bg-teal-900 text-white  p-4 text-center rounded-2xl">
-              Imran H
-            </h3>
-            <h3 className="text-teal-900 p-4">Designation : Data Analyst</h3>
-            <div className="border-2  border-teal-900 p-10 rounded-md">
-              <p>
-                Their team took care of everything — scheduling, follow-ups, and
-                even salary negotiation. I felt truly supported.
-              </p>
-            </div>
-          </div>
+    {/* FAQ Block */}
+    <div>
+      <h6 className="text-3xl font-bold text-center text-BgColor-Primaryclr mb-6">
+        Quick Answers for a Smooth Experience.
+      </h6>
 
-          <div className="p-10">
-            <div className="flex justify-center items-center mb-4    ">
-              <img
-                src="./pic2.jpeg"
-                alt="Sample"
-                className="w-40 h-40 object-cover rounded-full border-4 border-zinc-600"
-              />
-            </div>
-            <h3 className="bg-zinc-600 text-white  p-4 text-center rounded-2xl">
-              Fatima A., UX Designer
-            </h3>
-            <h3 className="text-zinc-600 p-4">
-              Designation : Front-End Developer
-            </h3>
-            <div className="border-2  border-zinc-600 p-10 rounded-md">
-              <p>
-                From CV optimization to company insights, their guidance gave me
-                the edge I needed. Can’t thank them enough!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full max-w-4xl mx-auto"
+        defaultValue="item-1"
+      >
+        <AccordionItem value="item-1" className="mb-5">
+          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+            What services does Al Sayeed Staffing Solutions provide?
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+            <p>
+              At Al Sayeed Staffing Solutions, we offer tailored staffing and recruitment services for both employers and job seekers.
+            </p>
+            <p>
+              For employers, we help find and hire the best talent to meet your unique business needs — from permanent placements to temporary and contract staffing.
+            </p>
+            <p>
+              For job seekers, we connect you with rewarding career opportunities that match your skills, experience, and goals.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-2" className="mb-5">
+          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+            Where are you located and which regions do you serve?
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+            <p>
+              Al Sayeed Staffing Solutions is based in Punjagutta, Hyderabad, India. We proudly serve clients and candidates across the GCC region, including Saudi Arabia, UAE, Qatar, Oman, Kuwait, and Bahrain.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-3" className="mb-5">
+          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+            How can I apply for a job through Al Sayeed Staffing Solutions?
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+            <p>
+              You can explore available job openings in the Job Seekers section on our website and apply directly online. If you’re looking for a specific role that’s not listed, you can also contact us with your requirements — our team will help you find the right opportunity.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-4" className="mb-5">
+          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+            Which industries do you specialize in?
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+            <p>
+              We specialize in providing skilled talent for industries such as oil & gas, construction, engineering, and other key sectors. To see a full list of industries we serve, please visit our Employers section or contact us for more details.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-5" className="mb-5">
+          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+            Is my information kept confidential?
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+            <p>
+              Yes — we take your privacy seriously. All personal and professional information you share with Al Sayeed Staffing Solutions is 100% confidential and is only used to match you with suitable job opportunities or clients. We never share your details without your consent.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  </div>
+</section>
+
+
       <Footer />
     </>
   );
