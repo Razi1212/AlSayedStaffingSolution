@@ -1,8 +1,8 @@
-import React, { useState } from "react";  // Removed duplicate import
+import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { login } from '../../store/authSlice';
 import { useRouter } from 'next/router';
-import Cookies from 'js-cookie'; 
+import Cookies from 'js-cookie';
 import Swal from "sweetalert2";
 
 const Admin = () => {
@@ -11,25 +11,27 @@ const Admin = () => {
   const [showPassword, setShowPassword] = useState(false);
   const dispatch = useDispatch();
   const router = useRouter();
+const ADMIN_USERNAME = process.env.NEXT_PUBLIC_USERNAME;
+const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
 
   const handleLogin = () => {
-    if (UserName === 'Admin' & Password ==='123123'){
+    if (UserName === ADMIN_USERNAME & Password === ADMIN_PASSWORD) {
 
-      const user = { name: UserName };  
+      const user = { name: UserName };
       dispatch(login(user));
-      Cookies.set('isAuthenticated', 'true', { expires: 7 }); 
-      router.push('/Admin/JobPost');  
+      Cookies.set('isAuthenticated', 'true', { expires: 7 });
+      router.push('/Admin/JobPost');
     }
-    else{
+    else {
       Swal.fire({
         title: 'Error!',
         text: "Wrong Credentials",
         icon: 'error',
-        confirmButtonColor: '#d33',  
+        confirmButtonColor: '#d33',
         confirmButtonText: 'OK'
       });
     }
-    };
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -374,103 +374,131 @@ export default function () {
         </div>
       </section>
 
-     
-
       <section className="relative bg-[#f3f6fb] py-16 px-8 overflow-hidden">
-  {/* Subtle texture overlay */}
-  <div className="absolute inset-0 bg-[url('/topography.svg')] bg-repeat opacity-10 pointer-events-none" />
+        {/* Subtle texture overlay */}
+        <div className="absolute inset-0 bg-[url('/topography.svg')] bg-repeat opacity-10 pointer-events-none" />
 
-  {/* Content container */}
-  <div className="relative z-10 max-w-5xl mx-auto space-y-12">
-    {/* Intro block */}
-    <div className="p-6 text-black rounded-md bg-white/80 backdrop-blur">
-      <p className="mb-4">
-        At <strong>Al Sayeed Staffing Solutions</strong>, we believe recruitment is more than filling a position — it’s about building lasting relationships and empowering growth for both employers and job seekers.
-      </p>
-      <ul className="list-disc pl-6 space-y-2">
-        <li>🔒 <strong>Integrity First:</strong> Transparent and ethical recruitment standards.</li>
-        <li>🕒 <strong>Time-Saving Processes:</strong> We handle the heavy lifting so you can focus on your business.</li>
-        <li>🌟 <strong>Quality Over Quantity:</strong> Every candidate is vetted for skills, attitude, and fit.</li>
-      </ul>
-    </div>
-
-    {/* FAQ Block */}
-    <div>
-      <h6 className="text-3xl font-bold text-center text-BgColor-Primaryclr mb-6">
-        Quick Answers for a Smooth Experience.
-      </h6>
-
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full max-w-4xl mx-auto"
-        defaultValue="item-1"
-      >
-        <AccordionItem value="item-1" className="mb-5">
-          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
-            What services does Al Sayeed Staffing Solutions provide?
-          </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
-            <p>
-              At Al Sayeed Staffing Solutions, we offer tailored staffing and recruitment services for both employers and job seekers.
+        {/* Content container */}
+        <div className="relative z-10 max-w-5xl mx-auto space-y-12">
+          {/* Intro block */}
+          <div className="p-6 text-black rounded-md bg-white/80 backdrop-blur">
+            <p className="mb-4">
+              At <strong>Al Sayeed Staffing Solutions</strong>, we believe
+              recruitment is more than filling a position — it’s about building
+              lasting relationships and empowering growth for both employers and
+              job seekers.
             </p>
-            <p>
-              For employers, we help find and hire the best talent to meet your unique business needs — from permanent placements to temporary and contract staffing.
-            </p>
-            <p>
-              For job seekers, we connect you with rewarding career opportunities that match your skills, experience, and goals.
-            </p>
-          </AccordionContent>
-        </AccordionItem>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                🔒 <strong>Integrity First:</strong> Transparent and ethical
+                recruitment standards.
+              </li>
+              <li>
+                🕒 <strong>Time-Saving Processes:</strong> We handle the heavy
+                lifting so you can focus on your business.
+              </li>
+              <li>
+                🌟 <strong>Quality Over Quantity:</strong> Every candidate is
+                vetted for skills, attitude, and fit.
+              </li>
+            </ul>
+          </div>
 
-        <AccordionItem value="item-2" className="mb-5">
-          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
-            Where are you located and which regions do you serve?
-          </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
-            <p>
-              Al Sayeed Staffing Solutions is based in Punjagutta, Hyderabad, India. We proudly serve clients and candidates across the GCC region, including Saudi Arabia, UAE, Qatar, Oman, Kuwait, and Bahrain.
-            </p>
-          </AccordionContent>
-        </AccordionItem>
+          {/* FAQ Block */}
+          <div>
+            <h6 className="text-3xl font-bold text-center text-BgColor-Primaryclr mb-6">
+              Quick Answers for a Smooth Experience.
+            </h6>
 
-        <AccordionItem value="item-3" className="mb-5">
-          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
-            How can I apply for a job through Al Sayeed Staffing Solutions?
-          </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
-            <p>
-              You can explore available job openings in the Job Seekers section on our website and apply directly online. If you’re looking for a specific role that’s not listed, you can also contact us with your requirements — our team will help you find the right opportunity.
-            </p>
-          </AccordionContent>
-        </AccordionItem>
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full max-w-4xl mx-auto"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1" className="mb-5">
+                <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+                  What services does Al Sayeed Staffing Solutions provide?
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+                  <p>
+                    At Al Sayeed Staffing Solutions, we offer tailored staffing
+                    and recruitment services for both employers and job seekers.
+                  </p>
+                  <p>
+                    For employers, we help find and hire the best talent to meet
+                    your unique business needs — from permanent placements to
+                    temporary and contract staffing.
+                  </p>
+                  <p>
+                    For job seekers, we connect you with rewarding career
+                    opportunities that match your skills, experience, and goals.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
 
-        <AccordionItem value="item-4" className="mb-5">
-          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
-            Which industries do you specialize in?
-          </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
-            <p>
-              We specialize in providing skilled talent for industries such as oil & gas, construction, engineering, and other key sectors. To see a full list of industries we serve, please visit our Employers section or contact us for more details.
-            </p>
-          </AccordionContent>
-        </AccordionItem>
+              <AccordionItem value="item-2" className="mb-5">
+                <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+                  Where are you located and which regions do you serve?
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+                  <p>
+                    Al Sayeed Staffing Solutions is based in Punjagutta,
+                    Hyderabad, India. We proudly serve clients and candidates
+                    across the GCC region, including Saudi Arabia, UAE, Qatar,
+                    Oman, Kuwait, and Bahrain.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
 
-        <AccordionItem value="item-5" className="mb-5">
-          <AccordionTrigger className="text-base text-BgColor-TextPrimary">
-            Is my information kept confidential?
-          </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
-            <p>
-              Yes — we take your privacy seriously. All personal and professional information you share with Al Sayeed Staffing Solutions is 100% confidential and is only used to match you with suitable job opportunities or clients. We never share your details without your consent.
-            </p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-    </div>
-  </div>
-</section>
+              <AccordionItem value="item-3" className="mb-5">
+                <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+                  How can I apply for a job through Al Sayeed Staffing
+                  Solutions?
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+                  <p>
+                    You can explore available job openings in the Job Seekers
+                    section on our website and apply directly online. If you’re
+                    looking for a specific role that’s not listed, you can also
+                    contact us with your requirements — our team will help you
+                    find the right opportunity.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
 
+              <AccordionItem value="item-4" className="mb-5">
+                <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+                  Which industries do you specialize in?
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+                  <p>
+                    We specialize in providing skilled talent for industries
+                    such as oil & gas, construction, engineering, and other key
+                    sectors. To see a full list of industries we serve, please
+                    visit our Employers section or contact us for more details.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="mb-5">
+                <AccordionTrigger className="text-base text-BgColor-TextPrimary">
+                  Is my information kept confidential?
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance text-base text-BgColor-TextPrimary">
+                  <p>
+                    Yes — we take your privacy seriously. All personal and
+                    professional information you share with Al Sayeed Staffing
+                    Solutions is 100% confidential and is only used to match you
+                    with suitable job opportunities or clients. We never share
+                    your details without your consent.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>

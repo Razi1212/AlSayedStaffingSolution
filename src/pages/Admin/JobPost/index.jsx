@@ -89,7 +89,7 @@ const JobPost = () => {
   return (
     <>
       <Dashboard />
-      <div className="bg-BgColor-Dashboard min-h-screen w-full px-10">
+      <div className="bg-BgColor-testing  min-h-screen w-full lg:px-[8%]  lg:py-10 p-5">
         <p className="text-lg py-4">Create and manage job postings here.</p>
 
         <div className="flex  items-center justify-between mb-4">
@@ -125,7 +125,7 @@ const JobPost = () => {
         <hr className="border-t border-black my-4" />
 
         <div>
-          <ul>
+          <ul>  
             {isLoading ? (
               <div className="text-center py-4">
                 <Loader />
@@ -138,7 +138,7 @@ const JobPost = () => {
               filteredJobs.map((job) => (
                 <li
                   key={job._id}
-                  className="border p-4 mb-6 rounded-lg shadow-md  flex flex-col gap-2"
+                  className="border p-4 mb-6 rounded-lg shadow-md  flex flex-col gap-2 bg-BgColor-contactcolor"
                 >
                   <h2 className="text-xl font-bold uppercase text-black-1000">{job.title}</h2>
                   <h2 className="text-lg font-semibold capitalize">{job.location}</h2>
