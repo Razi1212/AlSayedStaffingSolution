@@ -7,7 +7,7 @@ import { useState } from "react";
 import { FiMapPin, FiBriefcase, FiCheckCircle, FiUsers } from "react-icons/fi";
 import Swal from "sweetalert2";
 import { useRouter } from 'next/router';
-
+import { Checkbox } from "@/components/ui/checkbox"
 
 // Job Details Component
 const JobDetails = ({ job }) => {
@@ -163,6 +163,11 @@ const JobDetails = ({ job }) => {
                         <p className="whitespace-pre-line">{job.benefits || "No benefits mentioned."}</p>
                     </section>
 
+                    <section className="mt-10  gap-5 flex mb-5" >
+                        <Checkbox />
+                        <h2>To proceed with your application, please provide the following documents: educational certificates and transcripts, experience letters, passport (front and back), recent passport-size photograph, and relevant skill certificates.</h2>
+                    </section>
+
                     <div>
                         <button
                             type="submit"
@@ -174,6 +179,8 @@ const JobDetails = ({ job }) => {
                     </div>
                 </div>
             </div>
+
+
 
             {/* <div className="bg-slate-300 lg:px-60 lg:py-40  w-full bg-[url('/Apply.jpeg')] bg-cover bg-center">
                 <div >

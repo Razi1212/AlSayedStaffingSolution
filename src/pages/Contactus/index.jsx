@@ -127,10 +127,10 @@ const Contactus = () => {
                 <div>
                   <h5 className="font-semibold text-black mb-2 text-base">Email</h5>
                   <a
-                    href="mailto:syed.farooq@sayedstaffing.com"
+                    href="mailto:recruitment@sayedstaffing.com"
                     className="text-gray-900 hover:text-blue-600 text-base"
                   >
-                    syed.farooq@sayedstaffing.com
+                    recruitment@sayedstaffing.com
                   </a>
                 </div>
 
@@ -152,7 +152,7 @@ const Contactus = () => {
                     Al Sayed Staffing Solution 6th Floor, Astral Heights Banjara
                     Hills Road, 1, Rd Number 1, opposite to Anjani Vishnu Center,
                     Mothi Nagar, Dwarakapuri, Punjagutta, Hyderabad, Telangana
-                    500082, India.
+                    500034, India.
                   </p>
                 </div>
               </div>

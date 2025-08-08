@@ -3,9 +3,9 @@ import Link from "next/link";
 import Footer from "./Components/Footer";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import { Navigation } from "swiper/modules";
 import {
   Accordion,
@@ -15,14 +15,12 @@ import {
 } from "@/components/ui/accordion";
 
 export default function () {
-
-   const swiperRef = useRef(null);
+  const swiperRef = useRef(null);
   const handleVideoEnd = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
     }
   };
-
 
   const ref1 = useRef(null);
   const isInView1 = useInView(ref1, { once: true });
@@ -56,47 +54,53 @@ export default function () {
     },
   };
 
-    const videos = ['./video1.mp4', './video22.mp4', './video33.mp4','./video44.mp4'];
+  const videos = [
+    "./video1.mp4",
+    "./video22.mp4",
+    "./video33.mp4",
+    "./video44.mp4",
+  ];
 
   return (
     <>
       <Navigations />
 
-     <div className="relative w-full h-[500px] overflow-hidden">
-      <Swiper
-        loop={true}
-        modules={[Navigation]}
-        onSwiper={(swiper) => {
-          swiperRef.current = { swiper };
-        }}
-        className="h-full w-full"
-      >
-        {videos.map((src, index) => (
-          <SwiperSlide key={index}>
-            <video
-              onEnded={handleVideoEnd}
-              autoPlay
-              muted
-              playsInline
-              preload="auto"
-              className="absolute top-0 left-0 w-full h-full object-cover"
-            >
-              <source src={src} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="relative w-full h-[500px] overflow-hidden">
+        <Swiper
+          loop={true}
+          modules={[Navigation]}
+          onSwiper={(swiper) => {
+            swiperRef.current = { swiper };
+          }}
+          className="h-full w-full"
+        >
+          {videos.map((src, index) => (
+            <SwiperSlide key={index}>
+              <video
+                onEnded={handleVideoEnd}
+                autoPlay
+                muted
+                playsInline
+                preload="auto"
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              >
+                <source src={src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      {/* Overlay content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-        <h1 className="text-5xl font-bold">Al Sayed-Staffing-Solution</h1>
-        <p className="text-xl mt-4 max-w-2xl text-center">
-          Al Sayed Staffing Solutions is a premier recruitment agency
-          specializing in connecting Gulf region businesses with exceptional talent.
-        </p>
+        {/* Overlay content */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+          <h1 className="text-5xl font-bold">Al Sayed-Staffing-Solution</h1>
+          <p className="text-xl mt-4 max-w-2xl text-center">
+            Al Sayed Staffing Solutions is a premier recruitment agency
+            specializing in connecting Gulf region businesses with exceptional
+            talent.
+          </p>
+        </div>
       </div>
-    </div>
 
       <div className="w-full bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]">
         <section className=" bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] lg:max-w-[1600px] mx-auto font-geist">
@@ -132,7 +136,7 @@ export default function () {
                   Connecting Regional Talent with Gulf Opportunities.
                 </h3>
                 <p className="mt-4 text-gray-900 md:text-lg text-base">
-                  We specialize in placing skilled professionals across key Gulf
+                  We specialize in placing skilled professionals across key
                   industries, including oil and gas, construction,
                   manufacturing, finance, retail, hospitality, IT, and
                   healthcare. Our tailored recruitment solutions bridge the gap
@@ -164,7 +168,6 @@ export default function () {
           </div>
         </section>
       </div>
-
 
       <div className="w-full bg-white">
         <section className="bg-BgColor-testing lg:max-w-[1600px] mx-auto  lg:p-[8%] px-5 py-14">
@@ -263,10 +266,10 @@ export default function () {
                   From Search to Success — We’ve Got You Covered
                 </h3>
                 <p className="mt-4 text-gray-900 md:text-lg text-base">
-                  Looking to hire top talent or streamline your recruitment
-                  process? Our consultancy services are tailored to meet your
-                  hiring needs. We partner with companies across industries to
-                  deliver customized staffing solutions, saving you time and
+                  We’ve Got You Covered Looking to hire top talent or streamline
+                  your recruitment process? Our services are tailored to meet
+                  your hiring needs. We partner with companies across industries
+                  to deliver customized staffing solutions, saving you time and
                   resources. Whether you're scaling quickly or searching for
                   niche skills, our team is here to support your growth.
                 </p>
