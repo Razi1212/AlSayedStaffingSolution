@@ -10,6 +10,11 @@ const ViewResume = () => {
   const [data, setData] = useState([]);
   const [loader, setLoader] = useState(false);
   const [fileUrls, setFileUrls] = useState({});
+  const [filters, setFilters] = useState({
+    position: "",
+    location: "",
+    date: "",
+  });
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -50,7 +55,7 @@ const ViewResume = () => {
     if (window.confirm("Are you sure you want to download all PDFs?")) {
       const zip = new JSZip();
 
-      for (const user of data) {
+      for (const user of filteredData) {
         if (user?.file?.data) {
           const fileData = new Uint8Array(user.file.data);
           zip.file(`${user.fileName}`, fileData);
@@ -69,27 +74,84 @@ const ViewResume = () => {
     }
   };
 
+  // ✅ Filtering logic
+  const filteredData = data.filter((user) => {
+    const matchesPosition =
+      !filters.position ||
+      user.position?.toLowerCase().includes(filters.position.toLowerCase());
+
+    const matchesLocation =
+      !filters.location ||
+      user.currentLocation
+        ?.toLowerCase()
+        .includes(filters.location.toLowerCase());
+
+    const matchesDate =
+      !filters.date ||
+      (user.dob &&
+        new Date(user.dob).toISOString().slice(0, 10) === filters.date);
+
+    return matchesPosition && matchesLocation && matchesDate;
+  });
+
+  // ✅ Extract unique positions & locations for datalist
+  const uniquePositions = [...new Set(data.map((u) => u.position).filter(Boolean))];
+  const uniqueLocations = [...new Set(data.map((u) => u.currentLocation).filter(Boolean))];
+
   return (
     <div className="min-h-screen bg-BgColor-testing">
-     <Dashboard />
-      <div className="lg:px-[8%]  lg:py-10 p-5">
-          <p className="text-lg py-4">View Candidates Information</p>
+      <Dashboard />
+      <div className="lg:px-[8%] lg:py-10 p-5">
+        <p className="text-lg py-4">View Candidates Information</p>
         <div className="flex justify-between items-center mb-8">
-          <div className="flex   flex-wrap gap-6">
+          <div className="flex flex-wrap gap-6">
+            {/* Position Filter with Datalist */}
             <input
               type="text"
-              placeholder="Search by Location"
+              list="positions"
+              placeholder="Search by Position"
+              value={filters.position}
+              onChange={(e) =>
+                setFilters({ ...filters, position: e.target.value })
+              }
               className="p-2 rounded-md text-black border border-gray-400"
             />
+            <datalist id="positions">
+              {uniquePositions.map((pos, i) => (
+                <option key={i} value={pos} />
+              ))}
+            </datalist>
+
+            {/* Location Filter with Datalist */}
+            <input
+              type="text"
+              list="locations"
+              placeholder="Search by Location"
+              value={filters.location}
+              onChange={(e) =>
+                setFilters({ ...filters, location: e.target.value })
+              }
+              className="p-2 rounded-md text-black border border-gray-400"
+            />
+            <datalist id="locations">
+              {uniqueLocations.map((loc, i) => (
+                <option key={i} value={loc} />
+              ))}
+            </datalist>
+
+            {/* Date Filter */}
             <input
               type="date"
               placeholder="Date Filter"
+              value={filters.date}
+              onChange={(e) =>
+                setFilters({ ...filters, date: e.target.value })
+              }
               className="p-2 rounded-md text-black border border-gray-400"
             />
           </div>
-       
 
-          {data?.length > 0 && (
+          {filteredData?.length > 0 && (
             <button
               className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md shadow transition"
               onClick={handleDownloadAll}
@@ -99,25 +161,26 @@ const ViewResume = () => {
           )}
         </div>
 
-   <hr className="border-t border-black my-4" />
-
+        <hr className="border-t border-black my-4" />
 
         {loader ? (
           <Loader />
-        ) : data.length === 0 ? (
+        ) : filteredData.length === 0 ? (
           <p className="text-gray-500">No resumes found.</p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-            {data.map((user, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {filteredData.map((user) => (
               <div
-                key={index}
+                key={user._id || user.email}
                 className="flex flex-col justify-between bg-BgColor-contactcolor border border-gray-200 rounded-lg shadow-md p-5 transition hover:shadow-lg"
               >
                 <div className="mb-4">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2 capitalize">
                     {user.candidateName}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-4 capitalize">{user.position}</p>
+                  <p className="text-sm text-gray-600 mb-4 capitalize">
+                    {user.position}
+                  </p>
                   <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-700">
                     <p><strong>Email:</strong> {user.email}</p>
                     <p><strong>Nationality:</strong> {user.nationality}</p>
@@ -153,7 +216,6 @@ const ViewResume = () => {
                       >
                         Preview PDF
                       </button>
-
                     </>
                   )}
                 </div>
