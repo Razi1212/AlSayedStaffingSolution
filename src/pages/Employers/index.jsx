@@ -290,7 +290,7 @@ const Industries = () => {
       <Navigation />
       <div className="w-full bg-white">
         <div className="bg-BgColor-testing min-h-screen w-full lg:max-w-[1600px] mx-auto lg:px-[5%] lg:py-10 p-5 space-y-16 md:p-20">
-          {/* Intro Section */}
+
           <MotionSection>
             <motion.p variants={fadeInUp} className="leading-relaxed mb-6 text-base">
               At <strong>Al Sayed Staffing</strong>, we take pride in delivering
@@ -328,15 +328,19 @@ const Industries = () => {
               </p>
               <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
               <ul className="space-y-2 text-gray-900 text-base">
-                <li>✔️ Brick Mason</li>
-                <li>✔️ Ceramic Carver</li>
-                <li>✔️ Mosaic Fitter</li>
-                <li>✔️ Stone Boring Worker</li>
-                <li>✔️ Decorator Building Worker</li>
-                <li>✔️ Cooling Installation Asphalt Worker</li>
-                <li>✔️ Roof Worker Brick Mason</li>
-                <li>✔️ Stone Fixer</li>
-                <li>✔️ Insulation Worker</li>
+                <li>✔️ Scheduler/ Planner</li>
+                <li>✔️ Project Engineer</li>
+                <li>✔️ Instrument Technician</li>
+                <li>✔️ Mechanical Technician </li>
+                <li>✔️ Refinery Operator</li>
+                <li>✔️ Electrical Technician</li>
+                <li>✔️ Lead Instrument Engineer</li>
+                <li>✔️ Operation Engineer</li>
+                <li>✔️ Senior Technician</li>
+                <li>✔️ Process Engineer</li>
+                <li>✔️ Safety Engineer</li>
+                <li>✔️ Drilling Supervisor</li>
+                <li>✔️ Petroleum Engineer</li>
               </ul>
             </motion.div>
 
@@ -399,15 +403,15 @@ const Industries = () => {
               </p>
               <h3 className="font-semibold mb-2">Key Roles We Provide:</h3>
               <ul className="space-y-2 text-base">
-                <li>✔️ Brick Mason</li>
-                <li>✔️ Ceramic Carver</li>
-                <li>✔️ Mosaic Fitter</li>
-                <li>✔️ Stone Boring Worker</li>
-                <li>✔️ Decorator Building Worker</li>
-                <li>✔️ Cooling Installation Asphalt Worker</li>
-                <li>✔️ Roof Worker Brick Mason</li>
-                <li>✔️ Stone Fixer</li>
-                <li>✔️ Insulation Worker</li>
+                <li>✔️ Consultant - Doctors</li>
+                <li>✔️ Specialist – Doctors</li>
+                <li>✔️ Technician AHS</li>
+                <li>✔️ Radiographer</li>
+                <li>✔️ Sonographer</li>
+                <li>✔️ Nurse (B.Sc Holder) Nurse</li>
+                <li>✔️ Nurse(Registered Nurse)</li>
+                <li>✔️ Female/ Male(RegisteredNurse)</li>
+                <li>✔️ Mid Wife</li>
               </ul>
             </motion.div>
 

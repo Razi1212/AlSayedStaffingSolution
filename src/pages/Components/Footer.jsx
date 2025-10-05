@@ -13,7 +13,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="  bg-BgColor-NavNewColor text-white py-10 px-6 md:px-20  w-full ">
+    <div className=" bg-BgColor-footernavclr text-white py-10 px-6 md:px-20  w-full ">
       <div className="flex flex-wrap justify-between gap-8">
         <div className="max-w-md">
           <h4 className="text-xl font-bold text-white">Al Sayed Staffing Solutions.</h4>
