@@ -176,7 +176,7 @@ const Jobseekers = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [job, setJob] = useState('');
   const [location, setLocation] = useState('');
-  const [displayCount, setDisplayCount] = useState(2);
+  const [displayCount, setDisplayCount] = useState(10);
 
   useEffect(() => {
     async function fetchJobs() {

@@ -371,7 +371,7 @@ const Industries = () => {
 
             <motion.div variants={fadeInUp} className="flex-[1]">
               <img
-                src="./Construction.png"
+                src="./Oil&Gas.webp"
                 alt="Oil & Gas"
                 className="w-full h-auto object-contain max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]"
               />
@@ -382,7 +382,7 @@ const Industries = () => {
           <MotionSection className="w-full lg:flex items-center gap-6">
             <motion.div variants={fadeInUp} className="flex-[1]">
               <img
-                src="./Construction.png"
+                 src="./Construction.webp"
                 alt="Construction"
                 className="w-full h-auto object-contain max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]"
               />
@@ -438,7 +438,7 @@ const Industries = () => {
 
             <motion.div variants={fadeInUp} className="flex-[1]">
               <img
-                src="./HealthCare.png"
+                src="./HealthCare.webp"
                 alt="Healthcare"
                 className="w-full h-auto object-contain max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[400px] xl:max-h-[450px]"
               />

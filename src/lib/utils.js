@@ -6,6 +6,7 @@ export function cn(...inputs) {
 }
 
 export const industryTypes = [
+  "Oil & Gas",
   "Information Technology (IT)",
   "Healthcare and Medical",
   "Finance and Banking",

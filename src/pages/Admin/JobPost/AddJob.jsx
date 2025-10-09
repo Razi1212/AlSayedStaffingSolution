@@ -14,14 +14,14 @@ const AddJob = () => {
   const [responsibilities, setResponsibilities] = useState('')
   const [qualifications, setQualifications] = useState('')
   const [benefits, setBenefits] = useState('')
-  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
       //const response = await axios.post('/api/routelocal', {title, industry, location, description, responsibilities, qualifications, benefits})
       const response = await axios.post('/api/createJob', { title, industry, location, description, responsibilities, qualifications, benefits })
-      if(response){
+      if (response) {
         Swal.fire({
           title: "Success",
           text: "Job added successfully",
@@ -34,7 +34,7 @@ const AddJob = () => {
         });
 
       }
-      
+
     } catch (error) {
       if (error.response) {
         // The server responded with a status code outside the range of 2xx
@@ -67,20 +67,20 @@ const AddJob = () => {
           />
 
 
-<select
-  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-  name="Industry"
-  id="Industry"
-  required
-  onChange={(e) => setIndustry(e.target.value)}
->
-  <option value="" className="text-gray-1000"  > select Industry</option>
-  {industryTypes.map((industry, index) => (
-    <option key={index} value={industry}>
-      {industry}
-    </option>
-  ))}
-</select>
+          <select
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="Industry"
+            id="Industry"
+            required
+            onChange={(e) => setIndustry(e.target.value)}
+          >
+            <option value="" className="text-gray-1000"  > select Industry</option>
+            {industryTypes.map((industry, index) => (
+              <option key={index} value={industry}>
+                {industry}
+              </option>
+            ))}
+          </select>
 
           <input
             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"

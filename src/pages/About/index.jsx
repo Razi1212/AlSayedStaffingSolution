@@ -53,7 +53,7 @@ const About = () => {
               className="flex-1 space-y-4"
             >
               <img
-                src="./AboutHero2222.png"
+                src="./About.webp"
                 alt="Sample"
                 className="w-full h-auto object-contain 
           max-h-[200px] sm:max-h-[400px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[500px]"
