@@ -254,7 +254,7 @@ const Contactus = () => {
       <div className="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
 
         {/* Contact Form */}
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } }}}
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}
           className="bg-BgColor-contactcolor rounded-3xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300"
         >
           <motion.h2 variants={fadeInUp(0)} className="text-3xl font-semibold mb-6 text-gray-900">Send a Message</motion.h2>
@@ -323,9 +323,8 @@ const Contactus = () => {
               variants={fadeInUp(0.6)}
               type="submit"
               disabled={!agreed}
-              className={`w-full p-4 rounded-xl text-white font-semibold transition-colors duration-300 ${
-                agreed ? "bg-BgColor-buttonclr hover:bg-green-600" : "bg-gray-400 cursor-not-allowed"
-              }`}
+              className={`w-full p-4 rounded-xl text-white font-semibold transition-colors duration-300 ${agreed ? "bg-BgColor-buttonclr hover:bg-green-600" : "bg-gray-400 cursor-not-allowed"
+                }`}
             >
               Submit
             </motion.button>
@@ -335,7 +334,7 @@ const Contactus = () => {
         </motion.div>
 
         {/* Contact Info + Map */}
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } }}}
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
           className="space-y-8"
         >
           <motion.div variants={fadeInUp(0.1)} className="bg-BgColor-contactcolor rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300 space-y-4">
