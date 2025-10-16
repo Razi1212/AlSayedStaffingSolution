@@ -413,10 +413,10 @@ const Contactus = () => {
             <div className="flex items-center gap-2">
               <FiPhone className="text-BgColor-buttonclr" />
               <a
-                href="tel:+917093961892"
+                href="tel:+919390129704"
                 className="text-gray-900 hover:text-BgColor-buttonclr"
               >
-                +91 7093961892
+                +91 9390129704
               </a>
             </div>
             <div>
